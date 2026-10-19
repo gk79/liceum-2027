@@ -1,0 +1,1596 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#151b23">
+  <meta name="description" content="12 liceów w Warszawie, różne profile, prawdziwe projekty i Twoje pytania. Interaktywny przewodnik 2027.">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Liceum 2027 — Twoje cztery lata</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>:root{
+  --ink:#151b23;--muted:#61707b;--paper:#f8f8f3;--white:#fff;
+  --line:#d9dedc;--lime:#d9fb78;--mint:#bfe7db;--coral:#ffc1ad;--navy:#151b23;
+  --r:18px;--shadow:0 18px 55px rgba(23,29,35,.09);
+  --font:'DM Sans',Arial,system-ui,sans-serif;--display:'Space Grotesk',Arial,system-ui,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.55 var(--font);-webkit-font-smoothing:antialiased}
+body.dialog-open{overflow:hidden}
+button,input,textarea{font:inherit}
+button{cursor:pointer}
+a{color:inherit}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #527cdc;outline-offset:4px}
+img{display:block;max-width:100%}
+[hidden]{display:none!important}
+.shell{width:min(1240px,calc(100% - 72px));margin:0 auto}
+.section{padding-block:106px}
+h1,h2,h3,h4,p{margin-top:0}
+h1,h2,h3{font-family:var(--display);letter-spacing:-.048em}
+h2{font-weight:700;font-size:clamp(2.5rem,4.7vw,4.7rem);line-height:1.07;margin:0}
+h2 em,h1 em{font-weight:600;font-style:normal;color:#93b663}
+p{line-height:1.62}
+.muted,.subtle{color:var(--muted)}
+.subtle{font-size:1.05rem;max-width:620px;margin:18px 0 0}
+.overline,.eyebrow{font-size:11px;letter-spacing:.18em;font-weight:800;text-transform:uppercase;margin:0 0 24px}
+.overline{color:#4d6662}
+.overline.light{color:var(--lime)}
+.skip{position:absolute;left:14px;top:-100px;background:#fff;padding:10px;z-index:999}
+.skip:focus{top:8px}
+.site-header{height:80px;background:#fcfcf9eb;backdrop-filter:blur(18px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:40;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(24px,4vw,80px)}
+.brand{text-decoration:none;display:flex;align-items:center;gap:11px}
+.brand-symbol{height:46px;width:46px;background:var(--navy);color:var(--lime);border-radius:12px;display:flex;align-items:center;justify-content:center;font:700 27px/.8 var(--display);letter-spacing:-.08em}
+.brand-symbol span,.footer-logo span{color:#ffb2ad}
+.brand-copy{font:700 16px/.98 var(--display);letter-spacing:-.045em}
+.brand-copy b{color:#508d72;font-weight:700}
+.brand-copy small{display:block;color:#657476;font:600 10px var(--font);letter-spacing:.015em;margin-top:5px}
+.topnav{display:flex;align-items:center;gap:5px}
+.topnav a{text-decoration:none;font-size:13px;font-weight:700;padding:11px 17px;border-radius:999px;transition:.18s}
+.topnav a:hover{background:#ebefec}
+.nav-count{background:var(--ink);color:var(--lime);padding:2px 7px;border-radius:15px;margin-left:3px;font-size:11px}
+.mobile-menu{display:none;background:transparent;border:0;font-weight:800;font-size:13px}
+.hero{background:var(--navy);color:#f4f6f0;overflow:hidden;position:relative}
+.hero::before{content:"";position:absolute;inset:0;opacity:.16;pointer-events:none;background-image:radial-gradient(#afc7af 1px,transparent 1px);background-size:26px 26px;mask-image:linear-gradient(to right,transparent,black)}
+.hero-inner{position:relative}
+.hero-topline{height:78px;display:flex;align-items:center;font:700 11px var(--display);letter-spacing:.14em;color:#acb8b6;border-bottom:1px solid #ffffff25}
+.signal-dot{display:inline-block;background:var(--lime);height:8px;width:8px;border-radius:50%;margin-right:12px;box-shadow:0 0 0 6px #d9fb7820}
+.hero-layout{min-height:600px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:32px;padding:58px 0 72px}
+.hero-copy{max-width:760px;z-index:2}
+.hero .eyebrow{color:var(--lime)}
+.hero h1{font-size:clamp(3.65rem,7.1vw,7.35rem);line-height:.99;letter-spacing:-.08em;margin:0 0 30px;max-width:820px}
+.hero h1 em{color:var(--lime)}
+.hero-lead{max-width:585px;font-size:clamp(1rem,1.5vw,1.22rem);line-height:1.6;color:#c7d0cf;margin:0 0 34px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.button{display:inline-flex;gap:30px;align-items:center;justify-content:space-between;padding:15px 21px;text-decoration:none;border:1px solid transparent;border-radius:10px;font-weight:800;font-size:13px;line-height:1.2;transition:transform .2s,background .2s,border-color .2s;min-height:50px}
+.button:hover{transform:translateY(-2px)}
+.button-lime{background:var(--lime);color:#161b1a}
+.button-ghost{border-color:#677274;color:white;background:#ffffff09}
+.button-ghost:hover{background:#ffffff16}
+.button-dark{background:var(--navy);color:white}
+.button-outline{border-color:#89968f;background:transparent}
+.hero-art{height:530px;min-width:330px;position:relative;display:grid;place-items:center}
+.orbit{position:absolute;border-radius:50%;border:1px solid #ffffff26;aspect-ratio:1/1;transform:rotate(-24deg)}
+.orbit-1{width:95%;border-style:dashed;animation:rotation 100s linear infinite}
+.orbit-2{width:76%;border-color:#d9fb7880;border-width:1.5px;transform:rotate(20deg)}
+.orbit-3{width:53%;background:radial-gradient(circle at 25% 25%,#33453e,#1d2a29 70%);border-color:#ffffff30;box-shadow:inset -20px -25px 45px #0005}
+.orbit-1::before{content:"";height:14px;width:14px;background:var(--lime);border-radius:50%;position:absolute;top:10%;left:17%;box-shadow:0 0 20px #d9fb7860}
+.orbit-2::before{content:"";height:28px;width:28px;border:5px solid var(--coral);border-radius:50%;position:absolute;bottom:9%;right:13%}
+.hero-art-center{position:relative;text-align:center;z-index:2;display:flex;flex-direction:column}
+.hero-art-center span{font:700 clamp(9rem,16vw,16rem)/.75 var(--display);letter-spacing:-.12em;color:var(--lime)}
+.hero-art-center small{letter-spacing:.4em;color:#c8d2c9;font-size:13px;font-weight:700;margin-top:29px}
+.orbit-label{position:absolute;border:1px solid #778381;padding:9px 15px;background:#151b23;border-radius:6px;font:700 10px var(--display);letter-spacing:.1em;color:#fff;z-index:3}
+.label-a{top:11%;right:0;transform:rotate(8deg)}
+.label-b{left:-2%;top:41%;transform:rotate(-10deg)}
+.label-c{right:-2%;bottom:12%;transform:rotate(-3deg)}
+.hero-footer{height:78px;display:flex;gap:24px;align-items:center;justify-content:space-between;border-top:1px solid #ffffff30;font:700 11px var(--display);letter-spacing:.1em;color:#a4b1b0}
+.intro{display:grid;grid-template-columns:1.2fr .8fr;gap:9%;align-items:start}
+.intro h2{max-width:790px}
+.intro-side{padding-top:16px}
+.intro-side p{font-size:1.13rem;color:#46555d}
+.legend{display:flex;gap:13px 18px;flex-wrap:wrap;margin-top:26px}
+.legend span{display:flex;gap:7px;align-items:center;font-size:11px;font-weight:800}
+.legend-square{width:12px;height:12px;border-radius:3px;display:inline-block;border:1px solid #0001}
+.legend-square.mint{background:#bce4d3}.legend-square.coral{background:#ffc4aa}.legend-square.gray{background:#d8e0e0}
+.schools-area{background:#eef1ed}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:start;margin-bottom:48px}
+.section-head h2 em{color:#7ca56d}
+.counter-ornament{font:700 clamp(5rem,11vw,10rem)/.8 var(--display);letter-spacing:-.1em;color:#c3d5c9}
+.counter-ornament span{font-size:.35em;letter-spacing:-.07em;color:#829d8f}
+.toolbar{display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.searchbox{display:flex;align-items:center;gap:8px;border:1px solid #cfd6d0;background:#fff;border-radius:9px;padding:0 14px;min-height:51px;flex:1 1 300px;max-width:410px}
+.searchbox>span:first-child{font-size:26px;color:#576564}
+.searchbox input{min-width:0;border:0;background:transparent;outline:none;flex:1;font-size:13px;font-weight:600;color:var(--ink);height:46px}
+.searchbox input:focus-visible{outline:0}
+.searchbox:focus-within{outline:2px solid #82ad96}
+.shortcut{border:1px solid #d9dcdb;border-radius:4px;color:#909d9a;padding:0 5px;font-size:11px}
+.filter-list{display:flex;flex-wrap:wrap;gap:6px}
+.filter{border:1px solid #d1dbd5;color:#425c54;background:#f7faf7;border-radius:999px;padding:10px 13px;font-size:11px;font-weight:800;min-height:40px}
+.filter:hover{border-color:#708f7c}
+.filter.active{background:var(--navy);border-color:var(--navy);color:white}
+.result-line{display:flex;justify-content:space-between;color:#687a75;margin:26px 0 20px;font-size:12px;font-weight:700}
+.text-button{background:transparent;border:0;text-decoration:underline;text-underline-offset:3px;color:#3c6154}
+.school-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.school-card{background:#fff;border:1px solid #e2e7e1;border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .22s,box-shadow .22s;position:relative}
+.school-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.card-cover{height:185px;position:relative;background:var(--card-bg,#dceadf);overflow:hidden;padding:19px;display:flex;justify-content:space-between;align-items:flex-start}
+.card-cover::before{content:"";position:absolute;width:235px;height:235px;border:32px solid #ffffff62;border-radius:50%;right:-24px;top:15px}
+.card-cover::after{content:"";position:absolute;width:165px;height:165px;border:1.5px solid #2030324d;border-radius:50%;right:12px;top:49px}
+.card-index,.card-label{position:relative;z-index:2;letter-spacing:.08em;font:700 11px var(--display)}
+.card-index{border:1px solid #1d302b50;border-radius:6px;padding:8px}
+.card-label{background:#ffffffb8;padding:7px 10px;border-radius:20px;font-size:10px}
+.cover-glyph{position:absolute;right:28px;bottom:-22px;font:700 128px/.9 var(--display);letter-spacing:-.13em;color:#193028cc;z-index:1}
+.school-card-body{padding:24px 23px 16px;flex:1}
+.school-card .district{font-size:10px;letter-spacing:.15em;color:#698477;font-weight:800;text-transform:uppercase;margin:0 0 8px}
+.school-card h3{font-size:30px;line-height:1.05;margin:0 0 10px}
+.school-card .profile{font-size:14px;font-weight:650;line-height:1.4;margin:0;color:#3e4d4b;min-height:40px}
+.tag-row{display:flex;gap:7px;flex-wrap:wrap;margin:18px 0 2px}
+.tag{padding:6px 9px;font-size:10px;font-weight:800;border-radius:5px;background:#edf1ee;color:#466055}
+.card-bottom{display:flex;gap:8px;padding:16px 23px 23px;border-top:1px solid #e9eeeb;align-items:center;margin-top:16px}
+.open-card{border:0;background:var(--ink);color:white;font-weight:800;font-size:12px;padding:13px 16px;border-radius:8px;flex:1;min-height:43px}
+.open-card span{margin-left:12px}
+.compare-add{background:#f5f8f3;border:1px solid #d9ded8;color:#3c554b;border-radius:8px;padding:10px;font-size:20px;min-width:43px;min-height:43px}
+.compare-add.selected{background:var(--lime);color:var(--ink);border-color:var(--lime)}
+.other-head{display:flex;align-items:center;gap:20px;margin:60px 0 23px}
+.other-head .line{height:1px;background:#c7d3ca;flex:1}
+.other-head h3{font-size:18px;letter-spacing:-.03em;margin:0;color:#455c50}
+.extra-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.extra-card{border:1px solid #d3dfd8;background:#f9fbf7;border-radius:14px;padding:20px;display:flex;flex-direction:column;align-items:start;min-height:188px}
+.extra-card small{font-size:10px;color:#628577;letter-spacing:.12em;font-weight:800}
+.extra-card h3{font-size:25px;margin:12px 0 5px}
+.extra-card p{font-size:12px;color:#5c6e68;margin:0 0 15px}
+.extra-card button{background:transparent;border:0;border-bottom:1px solid var(--ink);padding:0 0 3px;font-size:12px;font-weight:800;margin-top:auto}
+.loading,.no-results{grid-column:1/-1;text-align:center;padding:60px;background:white;border-radius:12px;color:#66766c}
+.manifesto{background:#bfe7d5;padding:94px 0;color:#152f2a}
+.manifesto-layout{display:grid;grid-template-columns:190px 1fr;column-gap:35px}
+.manifesto-statement{font:700 clamp(2.5rem,4.4vw,4.6rem)/1.17 var(--display);letter-spacing:-.065em;margin:0;max-width:1000px}
+.manifesto-statement em{color:#467d65;font-style:normal}
+.manifesto-foot{grid-column:2;padding-top:30px;font-weight:700;font-size:14px}
+.manifesto-foot span{margin-left:16px;color:#467d65}
+.atlas-wrap{display:grid;grid-template-columns:minmax(280px,.43fr) 1fr;gap:18px;min-height:550px}
+.atlas-left{border:1px solid #d8e0db;border-radius:18px;background:#f0f3ee;padding:20px;display:flex;flex-direction:column;min-height:550px}
+.atlas-kicker{font:800 10px var(--display);letter-spacing:.13em;margin:2px 5px 10px;color:#688078}
+.map-list{overflow:auto;min-height:0;flex:1;max-height:430px}
+.map-school{display:flex;align-items:center;gap:10px;text-decoration:none;padding:10px;border-bottom:1px solid #dbe4dc;transition:background .2s;border-radius:5px}
+.map-school:hover{background:#e4eee5}
+.map-school-number{background:#dbe8db;color:#36554a;border-radius:5px;font:700 11px var(--display);padding:7px 8px}
+.map-school-main{flex:1;min-width:0}
+.map-school-name{display:block;font-weight:800;font-size:13px}
+.map-school-address{display:block;font-size:11px;color:#6a7c74}
+.map-school-arrow{font-size:16px}
+.atlas-small{font-size:11px;color:#647a6f;margin:15px 5px 0}
+.atlas-panel{background:#dfe7dc;border:1px solid #d0d9cf;border-radius:18px;overflow:hidden;position:relative;min-height:550px}
+.map-placeholder{height:100%;min-height:550px;display:flex;align-items:flex-start;justify-content:center;flex-direction:column;padding:48px;position:relative;overflow:hidden}
+.map-placeholder::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(50deg,transparent 0 49px,#bfcfc21a 50px 51px)}
+.map-rings{position:absolute;border:1px solid #9caf9d;border-radius:50%;height:550px;width:550px;right:-180px;top:-125px;box-shadow:0 0 0 100px #cbdacb70,0 0 0 200px #d8e4d3}
+.map-glyph{font:600 100px/.7 var(--display);position:relative;color:#497563}
+.map-placeholder h3{font-size:42px;max-width:360px;line-height:1.07;margin:25px 0 12px;position:relative}
+.map-placeholder p{max-width:340px;color:#4b6659;font-size:14px;position:relative}
+.map-placeholder .button{position:relative}
+#map{width:100%;height:550px;z-index:1}
+.leaflet-popup-content-wrapper{border-radius:10px}
+.leaflet-popup-content{font:13px var(--font)}
+.map-pin{background:var(--ink);color:var(--lime);border:2px solid white;border-radius:8px;box-shadow:0 3px 10px #0003;display:grid;place-items:center;font:700 12px var(--display)}
+.photo-section{padding-top:50px}
+.photo-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:18px}
+.photo{min-width:0;position:relative;margin:0;background:#dde3db;border-radius:16px;overflow:hidden;aspect-ratio:1.5}
+.photo-second{aspect-ratio:1.09}
+.photo img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.photo:hover img{transform:scale(1.035)}
+.photo figcaption{position:absolute;left:12px;right:12px;bottom:12px;padding:12px 15px;border-radius:8px;background:#f8fbf5e8;backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:space-between;gap:15px}
+.photo figcaption b{font:700 18px var(--display)}
+.photo figcaption span{font-size:10px;text-align:right;color:#52605a}
+.photo figcaption a{text-decoration:underline;text-underline-offset:2px}
+.small-note{font-size:11px;color:#77857b;margin-top:12px}
+.paths-section{background:#e7ebe5}
+.path-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.path{padding:30px 30px 27px;border:1px solid #cbd4cb;border-radius:15px;background:#f6f8f4;min-height:350px;display:flex;flex-direction:column}
+.path-featured{background:var(--lime);border-color:#c9e66b}
+.path-num{font:700 12px var(--display);color:#678270}
+.path h3{font-size:clamp(27px,3.2vw,44px);line-height:1.06;margin:45px 0 20px}
+.path p{font-size:14px;color:#42544e}
+.path-end{font-weight:800;border-top:1px solid #77907e60;padding-top:17px;margin-top:auto;font-size:12px}
+.notes-section{scroll-margin-top:90px}
+.save-state{font-size:11px;padding:9px 13px;border:1px solid #cfddd2;border-radius:6px;background:#eef3eb;color:#5a7362}
+.privacy-line{display:flex;align-items:start;gap:16px;background:#e8f4eb;border-left:4px solid #57997a;border-radius:7px;padding:18px 20px;margin-bottom:40px}
+.privacy-line span{font-size:22px;color:#438769}
+.privacy-line p{margin:0;font-size:13px;color:#446254}
+.notes-layout{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.notes-layout h3{font-size:28px;margin-bottom:18px}
+.status-summary{font-size:12px;color:#627c6e;margin-bottom:14px}
+.notes-school-list{display:grid;gap:8px}
+.note-school{display:grid;grid-template-columns:1fr;gap:7px;padding:14px;background:white;border:1px solid #e0e6df;border-radius:10px}
+.note-school-name{font-size:14px;font-weight:800}
+.note-school-detail{color:#7a8d80;font-size:11px}
+.note-school select,.dialog-select{border:1px solid #d0dacf;background:#f6f8f3;border-radius:6px;padding:9px 11px;font-size:12px;width:100%;color:#253930}
+.freeform{background:#fff;border:1px solid #dfe5dc;padding:25px;border-radius:13px;display:flex;flex-direction:column;gap:12px}
+.freeform label{font-weight:800;font-size:14px;margin-top:6px}
+.freeform textarea,.detail-note{width:100%;resize:vertical;border:1px solid #cbd6ca;border-radius:8px;padding:12px;color:#21332a;background:#fbfdf9;font-size:13px;line-height:1.6}
+.export-controls{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.export-controls .button{gap:12px;flex:1}
+.danger-link{align-self:flex-start;border:0;background:transparent;color:#915544;text-decoration:underline;text-underline-offset:3px;font-size:12px;padding:6px 0}
+.site-footer{background:#151b23;color:#f2f5ed;padding:57px 0}
+.footer-inner{display:flex;justify-content:space-between;align-items:end;gap:35px}
+.footer-logo{font:700 42px var(--display);letter-spacing:-.1em;color:var(--lime)}
+.site-footer p{margin-top:9px;font-size:14px;color:#bec7c2}
+.footer-meta{font-size:11px;color:#abbab3;text-align:right;line-height:1.9}
+.footer-meta a{text-decoration:underline}
+.school-dialog,.compare-dialog{border:0;padding:0;max-width:unset;max-height:unset;margin:0 0 0 auto;width:min(880px,100vw);height:100dvh;background:var(--paper);color:var(--ink);box-shadow:-25px 0 85px #0003;overflow-y:auto;overscroll-behavior:contain}
+.school-dialog::backdrop,.compare-dialog::backdrop{background:#111c1acb;backdrop-filter:blur(6px)}
+.dialog-shell{min-height:100%}
+.dialog-head{display:flex;justify-content:space-between;align-items:center;height:72px;padding:0 clamp(22px,5vw,56px);position:sticky;top:0;z-index:2;background:#f8f8f3ea;backdrop-filter:blur(15px);border-bottom:1px solid var(--line)}
+.dialog-brand{font:800 12px var(--display);letter-spacing:.1em;color:#486252}
+.close-button{border:1px solid #cad4ce;border-radius:8px;background:#fff;width:41px;height:41px;font-size:17px}
+.dialog-content{padding:35px clamp(22px,5vw,56px) 95px}
+.detail-cover{height:230px;border-radius:14px;background:var(--detail-color,#cbe8db);display:flex;align-items:end;position:relative;overflow:hidden;padding:25px}
+.detail-cover::before{content:"";position:absolute;right:-60px;top:-100px;width:380px;height:380px;border:45px solid #ffffff45;border-radius:50%}
+.detail-cover-number{font:700 148px/.8 var(--display);letter-spacing:-.1em;color:#1b2e2aa0}
+.detail-cover-label{position:absolute;right:26px;top:20px;font-size:11px;font-weight:800;letter-spacing:.09em}
+.detail-title{font-size:clamp(39px,6vw,65px);margin:32px 0 14px;line-height:1.05}
+.detail-subtitle{font-size:19px;color:#52645e;font-weight:600;margin-bottom:25px}
+.detail-controls{background:#eff3ea;border-radius:11px;padding:18px;margin:22px 0 32px;display:grid;grid-template-columns:1fr;gap:13px}
+.detail-controls label{font-weight:800;font-size:12px}
+.detail-note{min-height:95px}
+.detail-tags{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.md-body h3{font-size:25px;line-height:1.2;margin:30px 0 12px}
+.md-body h4{font-size:19px}
+.md-body p{font-size:15px;color:#394a43;line-height:1.75;margin:0 0 18px}
+.md-body p strong{color:#1a2522}
+.md-body a{color:#285f56;text-decoration:underline;text-underline-offset:3px}
+.md-body blockquote{border-left:4px solid #91ba95;margin:20px 0;padding:11px 18px;background:#e9f2e9}
+.md-body ul,.md-body ol{padding-left:22px;color:#40554a}
+.md-body li{margin-bottom:7px}
+.md-body hr{border:0;border-top:1px solid #d5ded7;margin:29px 0}
+.md-body code{background:#e7ece5;padding:3px 5px;font-size:13px;border-radius:5px}
+.md-body table{border-collapse:collapse;font-size:12px;display:block;overflow-x:auto;max-width:100%;margin-bottom:30px}
+.md-body th,.md-body td{border:1px solid #cbd7d1;text-align:left;padding:11px}
+.md-body th{background:#e2eee3}
+.md-body h2{font-size:32px;margin:24px 0}
+.md-body a:hover{text-decoration-thickness:2px}
+.detail-bottom{margin-top:28px;padding-top:25px;border-top:1px solid var(--line);display:flex;gap:12px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.detail-bottom .button{max-width:300px}
+.compare-dialog{width:min(1000px,100vw)}
+.compare-inner{padding:30px clamp(22px,5vw,56px) 90px}
+.compare-inner h2{font-size:clamp(34px,5vw,55px)}
+.compare-inner>p{color:var(--muted)}
+.compare-table{width:100%;border-collapse:collapse;table-layout:fixed;margin-top:30px;font-size:13px}
+.compare-table th,.compare-table td{padding:14px 10px;border-bottom:1px solid #d8e0d9;text-align:left;vertical-align:top;overflow-wrap:anywhere}
+.compare-table thead th{font:700 18px var(--display);background:#dfeee4}
+.compare-table th:first-child{width:125px;font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:#627367}
+.compare-tray{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:60;width:min(560px,calc(100% - 28px));border-radius:13px;box-shadow:0 16px 45px #10182145;background:var(--ink);color:white;padding:13px 17px}
+.tray-content{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:12px;font-weight:700}
+.tray-actions{display:flex;gap:8px;align-items:center}
+.tray-actions button{border:0;color:white;background:transparent;padding:10px;font-size:12px}
+.tray-actions .tray-go{background:var(--lime);color:var(--ink);border-radius:7px;font-weight:800}
+.toast{position:fixed;z-index:120;left:50%;bottom:20px;transform:translate(-50%,30px);padding:11px 17px;color:white;background:#1b3127;border-radius:7px;box-shadow:0 10px 25px #0004;font-size:13px;opacity:0;pointer-events:none;transition:.25s}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+@keyframes rotation{to{transform:rotate(336deg)}}
+@media(max-width:1100px){
+ .school-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .extra-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .hero-layout{grid-template-columns:1fr .7fr}
+ .hero-art{min-width:250px;height:440px}
+ .hero-art-center span{font-size:160px}
+ .toolbar{align-items:stretch}
+ .filter-list{max-width:100%}
+}
+@media(max-width:800px){
+ .shell{width:min(100% - 36px,700px)}
+ .site-header{height:70px;padding:0 18px}
+ .mobile-menu{display:block}
+ .topnav{display:none;position:absolute;right:0;left:0;top:70px;background:#f8fbf5;box-shadow:0 20px 40px #0002;border-bottom:1px solid #dce4db;padding:12px 18px}
+ .topnav.open{display:flex;flex-direction:column;align-items:stretch}
+ .hero-topline{height:65px}
+ .hero-layout{display:flex;flex-direction:column;align-items:start;padding:65px 0 0;min-height:0;gap:2px}
+ .hero-copy{max-width:95%}
+ .hero h1{font-size:clamp(52px,10vw,90px)}
+ .hero-art{min-width:0;width:100%;height:300px}
+ .orbit-1{width:300px}.orbit-2{width:245px}.orbit-3{width:185px}
+ .hero-art-center span{font-size:140px}
+ .hero-art-center small{margin-top:7px}
+ .label-a{right:15%}.label-b{left:15%}.label-c{right:15%}
+ .hero-footer{height:auto;padding:20px 0;flex-wrap:wrap;gap:10px;font-size:9px}
+ .intro{grid-template-columns:1fr;gap:15px}
+ .section{padding-block:70px}
+ .section-head{margin-bottom:30px}
+ .school-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .school-card .profile{min-height:62px}
+ .card-cover{height:145px}
+ .cover-glyph{font-size:100px}
+ .atlas-wrap{grid-template-columns:1fr}
+ .atlas-left{min-height:350px}
+ .map-list{max-height:270px}
+ .atlas-panel,.map-placeholder{min-height:430px}
+ #map{height:430px}
+ .manifesto-layout{grid-template-columns:1fr;gap:20px}
+ .manifesto-foot{grid-column:1}
+ .notes-layout{grid-template-columns:1fr}
+ .photo-grid{grid-template-columns:1fr 1fr}
+ .photo figcaption{align-items:start;flex-direction:column}
+ .photo figcaption span{text-align:left}
+}
+@media(max-width:560px){
+ .section{padding-block:58px}
+ h2{font-size:clamp(38px,10vw,55px)}
+ .hero h1{font-size:clamp(49px,13vw,72px)}
+ .hero-art{height:260px}
+ .hero-art-center span{font-size:124px}
+ .orbit-1{width:260px}.orbit-2{width:213px}.orbit-3{width:163px}
+ .hero-footer{display:none}
+ .intro-side p{font-size:16px}
+ .school-grid{grid-template-columns:1fr}
+ .card-cover{height:185px}
+ .cover-glyph{font-size:130px}
+ .school-card .profile{min-height:0}
+ .extra-grid{grid-template-columns:1fr 1fr;gap:8px}
+ .extra-card{padding:15px;min-height:190px}
+ .extra-card h3{font-size:21px}
+ .toolbar{flex-direction:column;align-items:stretch}
+ .searchbox{max-width:none;flex:unset}
+ .filter-list{flex-wrap:nowrap;overflow-x:auto;padding-bottom:5px}
+ .filter{white-space:nowrap}
+ .counter-ornament{display:none}
+ .manifesto{padding:63px 0}
+ .manifesto-statement{font-size:clamp(34px,10vw,55px)}
+ .photo-grid{grid-template-columns:1fr}
+ .photo,.photo-second{aspect-ratio:1.45}
+ .path-grid{grid-template-columns:1fr}
+ .path{min-height:270px}
+ .path h3{margin:28px 0 14px}
+ .notes-layout{gap:22px}
+ .freeform{padding:17px}
+ .export-controls{flex-direction:column}
+ .footer-inner{flex-direction:column;align-items:start}
+ .footer-meta{text-align:left}
+ .dialog-content{padding:18px 20px 70px}
+ .detail-cover{height:160px}
+ .detail-cover-number{font-size:100px}
+ .detail-title{font-size:41px}
+ .compare-table{font-size:11px}
+ .compare-table th:first-child{width:86px}
+ .compare-table th,.compare-table td{padding:8px 6px}
+ .dialog-head{padding:0 20px}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;scroll-behavior:auto!important;transition:none!important}
+}
+
+/* Final editorial details — desktop-first, still responsive. */
+.principles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid #d5dfd7;border-bottom:1px solid #d5dfd7;margin-bottom:92px}
+.principle{padding:26px 24px 24px;border-right:1px solid #d5dfd7}
+.principle:first-child{padding-left:0}
+.principle:last-child{border-right:0}
+.principle>span{display:block;font:700 12px var(--display);color:#6a967e;margin-bottom:13px}
+.principle p{font-size:13px;line-height:1.65;color:#5e7069;margin:0}
+.principle p b{color:var(--ink)}
+.school-views{display:grid;grid-template-columns:1.05fr 1fr 1fr;gap:14px;margin-top:34px}
+.view-intro{padding:25px 25px 25px 0}
+.view-intro>span,.view-tag{font:800 10px var(--display);letter-spacing:.12em;color:#5d806b}
+.view-intro h3{font-size:29px;margin:12px 0 8px}
+.view-intro p{font-size:13px;color:#617368;margin:0}
+.view-link{position:relative;display:flex;flex-direction:column;min-height:210px;text-decoration:none;background:#e5ece5;border:1px solid #d4ded4;border-radius:12px;padding:25px 25px 24px;transition:transform .2s,background .2s}
+.view-link:last-child{background:#f4e4d6;border-color:#e7d3c1}
+.view-link:hover{transform:translateY(-3px);background:#d8e5d9}
+.view-link:last-child:hover{background:#efdbc9}
+.view-link strong{font:700 28px/1.08 var(--display);letter-spacing:-.045em;margin:23px 0 10px}
+.view-link>span:nth-last-of-type(1){font-size:12px;color:#50655a;max-width:260px;line-height:1.5}
+.view-link i{position:absolute;right:21px;top:17px;font-style:normal;font:700 25px var(--display)}
+.link-callout{display:flex;align-items:center;justify-content:space-between;gap:15px;background:#e8f0e8;border-left:3px solid #89b394;border-radius:7px;padding:15px 17px;margin:23px 0}
+.link-callout a{text-decoration:none;font-size:13px;font-weight:800;border-bottom:1px solid #416959}
+.link-callout span{font-size:11px;color:#597366}
+.md-body{overflow-wrap:anywhere}
+.md-body p{hyphens:auto}
+.md-body a[href^="http"]::after{content:" ↗";font-size:10px;color:#5d887a}
+.md-body h3:first-child{margin-top:5px}
+.detail-controls{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:20px}
+.detail-controls label[for="detailNote"],.detail-controls textarea{grid-column:1/-1}
+.detail-controls .dialog-select{max-width:290px}
+.note-school:focus-within{border-color:#88af92}
+.export-controls .button{flex:1 1 175px}
+@media (max-width:900px){
+ .principles{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .principle:nth-child(2){border-right:0}
+ .principle:nth-child(-n+2){border-bottom:1px solid #d5dfd7}
+ .principle:nth-child(3){padding-left:0}
+ .school-views{grid-template-columns:1fr 1fr}
+ .view-intro{grid-column:1/-1;max-width:560px}
+}
+@media (max-width:580px){
+ .principles{grid-template-columns:1fr;margin-bottom:55px}
+ .principle,.principle:first-child,.principle:nth-child(3){padding:16px 0;border-right:0;border-bottom:1px solid #d5dfd7}
+ .principle:last-child{border-bottom:0}
+ .school-views{grid-template-columns:1fr}
+ .view-intro{grid-column:auto}
+ .view-link{min-height:185px}
+ .detail-controls{grid-template-columns:1fr}
+}
+
+.open-questions{background:#162522;color:#f0f4ed}
+.open-questions .overline{color:#cde7a0}
+.open-questions h2 em{color:#d9fb78}
+.open-questions .subtle{color:#b7c9be}
+.unknown-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#ffffff30;border:1px solid #ffffff30}
+.unknown-grid article{padding:30px 29px 35px;min-height:236px;background:#162522}
+.unknown-grid article span{font:800 11px var(--display);letter-spacing:.09em;color:#b5d6a0}
+.unknown-grid article h3{font:700 27px/1.12 var(--display);letter-spacing:-.045em;margin:40px 0 12px;color:white}
+.unknown-grid article p{font-size:13px;color:#b6c9c1;margin:0}
+@media(max-width:900px){.unknown-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:580px){.unknown-grid{grid-template-columns:1fr}.unknown-grid article{min-height:0}.unknown-grid article h3{margin-top:20px}}
+
+/* October desktop refinements: reliable atlas, Google navigation and sourced photo grid. */
+.atlas-wrap{grid-template-columns:minmax(370px,.42fr) 1fr;min-height:690px}
+.atlas-left{min-height:690px}
+.atlas-panel{min-height:690px}
+#map{height:690px;background:#d9e9e0}
+.map-without-tiles{background:repeating-linear-gradient(0deg,#dcebe0,#dcebe0 57px,#c9dbc9 58px),repeating-linear-gradient(90deg,#dcebe0,#dcebe0 57px,#c9dbc9 58px)}
+.map-school{text-decoration:none;min-height:51px}
+.map-school-main{padding:3px 0}
+.map-links{display:flex;gap:5px;align-items:center;flex-shrink:0}
+.map-links a{font-size:10px;font-weight:800;text-decoration:none;border:1px solid #bcd0c2;border-radius:5px;padding:6px 7px;background:#fff;color:#315d4e}
+.map-links a:last-child{background:#d9fb78;color:#1d2d26;border-color:#cce785}
+.map-links a:hover{filter:brightness(.96)}
+.map-home-pin{background:#d9fb78;color:#152b23;border:2px solid #264436;box-shadow:0 0 0 5px #d9fb7870,0 4px 12px #0003;border-radius:50%;display:grid;place-items:center;font:bold 25px var(--display)}
+.home-settings{padding:16px;background:#fff;border:1px solid #d5e3d9;border-radius:11px;margin:10px 0 13px}
+.home-setting-head{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.home-setting-head>span{display:grid;place-items:center;background:#d9fb78;border-radius:7px;width:29px;height:29px;font-size:24px;line-height:1}
+.home-setting-head strong{font:700 14px var(--display)}
+.home-setting-head small{margin-left:auto;color:#577564;font-size:10px;background:#e4f1e6;border-radius:5px;padding:4px 6px}
+.home-settings label{display:block;font-size:11px;color:#566c61;font-weight:700;margin-bottom:7px}
+.home-settings input{width:100%;border:1px solid #b9cdc1;border-radius:6px;padding:11px 10px;font-size:13px;min-width:0;background:#f7faf7;color:var(--ink)}
+.home-buttons{display:flex;gap:10px;align-items:center;margin-top:9px}
+.home-buttons button:first-child{background:#182920;color:white;border:0;padding:10px 12px;border-radius:6px;font-size:11px;font-weight:800;flex:1}
+.home-buttons button:last-child{border:0;color:#935c4d;background:transparent;font-size:11px;text-decoration:underline}
+.home-status{font-size:10px;line-height:1.45;color:#587363;margin:10px 0 0}
+.map-utility{border-top:1px solid #cadccf;margin-top:12px;padding:10px 5px 0}
+.map-utility a{font-size:11px;font-weight:800;text-decoration:underline;text-underline-offset:3px;color:#3d705b}
+.atlas-small{font-size:10px}
+.map-fallback{position:absolute;left:17px;right:17px;bottom:57px;background:#fffdf2e8;border:1px solid #d9dbbd;border-radius:9px;padding:13px 14px;z-index:400;pointer-events:none;box-shadow:0 6px 20px #0001}
+.map-fallback strong,.map-fallback span{display:block;font-size:11px;color:#385045;line-height:1.45}
+.map-fallback span{font-size:10px;margin-top:4px}
+.map-caption{position:absolute;right:15px;top:13px;background:#172d27e8;color:#fff;z-index:400;border-radius:8px;padding:8px 13px;font-size:11px;font-weight:700;pointer-events:none}
+.map-caption a{color:#e3faab;pointer-events:auto}
+.school-photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.school-photo-card{border:1px solid #d9e2db;border-radius:15px;overflow:hidden;background:#fff;display:flex;flex-direction:column;min-width:0}
+.school-photo-image{background:var(--photo-color,#e4ece2);aspect-ratio:1.48;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.school-photo-image img{object-fit:cover;width:100%;height:100%;position:absolute;inset:0}
+.photo-error{font-size:13px;font-weight:700;text-align:center;max-width:230px;color:#57675d;padding:20px}
+.photo-empty{display:flex;flex-direction:column;align-items:start;width:100%;padding:25px}
+.photo-empty>span{font:700 53px/.9 var(--display);margin-bottom:22px}
+.photo-empty strong{font:700 25px/1.05 var(--display);letter-spacing:-.05em}
+.photo-empty small{font-size:11px;color:#586f60;margin-top:12px}
+.school-photo-content{padding:19px 20px 20px;flex:1;display:flex;flex-direction:column}
+.school-photo-content .photo-date{font-size:10px;color:#759283;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.school-photo-content h3{font-size:24px;margin:10px 0 5px}
+.school-photo-content p{font-size:10px;color:#758379;line-height:1.55;margin:0 0 15px}
+.school-photo-content p a{color:#526c60}
+.school-photo-links{margin-top:auto;padding-top:12px;border-top:1px solid #e2e9e3;display:flex;flex-wrap:wrap;gap:8px}
+.school-photo-links a{display:block;text-decoration:none;border:1px solid #d5e5d7;background:#f6faf6;color:#34584d;border-radius:6px;padding:7px 9px;font-weight:700;font-size:11px}
+.school-photo-links a:hover{background:#e5f2e9}
+.detail-bottom{justify-content:flex-start}
+.detail-bottom .button{max-width:none;flex:1 1 145px;white-space:nowrap}
+@media(max-width:1100px){.atlas-wrap{grid-template-columns:minmax(330px,.44fr) 1fr}.school-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:800px){.atlas-wrap{grid-template-columns:1fr}.atlas-left{min-height:0}.atlas-panel,#map{min-height:480px;height:480px}.map-caption{top:10px;right:10px}}
+@media(max-width:590px){.school-photo-grid{grid-template-columns:1fr}.map-links{flex-direction:column}.atlas-panel,#map{min-height:400px;height:400px}}
+
+/* Source-identified building photographs in the main profile cards. */
+.card-cover .cover-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0;filter:saturate(.86)}
+.card-cover:has(.cover-photo:not([hidden]))::before{background:linear-gradient(110deg,#101b19b8,#162c1f10 95%);border:0;border-radius:0;inset:0;width:100%;height:100%;top:0;right:0;z-index:1;content:""}
+.card-cover:has(.cover-photo:not([hidden]))::after{border-color:#ffffff69;z-index:1}
+.card-cover:has(.cover-photo:not([hidden])) .card-index{color:#f6fff4;background:#111d1bad;border-color:#fff6}
+.card-cover:has(.cover-photo:not([hidden])) .cover-glyph{color:#ffffffbc;text-shadow:0 4px 30px #14221e99}
+.home-buttons{flex-wrap:wrap}
+.home-buttons #pinHome{flex-basis:100%;border:1px dashed #a7b8ab;background:#f5faf6;border-radius:6px;padding:8px 10px;font-size:10px;font-weight:800;color:#486c58}
+.home-buttons #pinHome:hover{background:#eaf5ea}
+
+/* v3 — embedded owner-curated Google My Maps and source-complete editorial sections */
+.atlas-wrap{grid-template-columns:minmax(350px,.40fr) minmax(0,1fr);align-items:stretch}
+.mymaps-panel{display:flex;flex-direction:column;overflow:hidden;background:#e7ede8;min-width:0}
+#myMapsFrame{width:100%;min-height:580px;flex:1;border:0;display:block;background:#e5ede3}
+.my-maps-footer{display:flex;gap:16px;justify-content:space-between;align-items:center;padding:14px 19px;background:#182720;color:#f4faee;font-size:11px;font-weight:800}
+.my-maps-footer a{color:#d9fb78;text-decoration:none;border-bottom:1px solid #d9fb788a;white-space:nowrap}
+.maps-online-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#d9fb78;margin-right:9px}
+.map-embed-note{font-size:11px;color:#567064;padding:12px 19px 14px;background:#eff4ec;line-height:1.5;margin:0}
+#map{display:none!important}
+.guide-context-wrap{padding-bottom:32px}
+.guide-context-details,.editorial-sources-details{border:1px solid #d6e1d7;border-radius:14px;overflow:hidden;background:#fff}
+.guide-context-details summary,.editorial-sources-details summary{display:flex;align-items:center;justify-content:space-between;cursor:pointer;font:700 16px var(--display);letter-spacing:-.025em;padding:18px 25px;list-style:none}
+.guide-context-details summary::-webkit-details-marker,.editorial-sources-details summary::-webkit-details-marker{display:none}
+.guide-context-details summary span:last-child,.editorial-sources-details summary span:last-child{font-size:22px;color:#547661;font-weight:500}
+.guide-original-text{padding:16px 28px 20px;border-top:1px solid #e0e9e1}
+.guide-original-text h3{margin:8px 0 13px}
+.guide-original-text p,.guide-original-text li{font-size:14px;line-height:1.7}
+.guide-original-text blockquote{margin:12px 0 20px}
+.guide-original-text ol{counter-reset:none}
+.guide-original-text li{margin:8px 0}
+.other-intro{max-width:920px;margin:-4px 0 26px}
+.other-intro p{font-size:13px}
+.path{min-height:395px}
+.path .path-explanation{line-height:1.68;font-size:15px;color:#35473d}
+.path h3{margin:38px 0 24px;font-size:clamp(28px,2.8vw,40px)}
+.path-end{padding-top:15px}
+.path-end>span{display:block;font:800 10px var(--display);letter-spacing:.12em;margin:0 0 11px;color:#5b7866}
+.path-end p{margin:0;font-size:13px;line-height:1.6;color:#304238}
+.path-conclusion{font-size:14px;line-height:1.7;max-width:960px;margin:23px 0 0;color:#4c5f52}
+.path-conclusion p{margin:0}
+.unknown-grid article .unknown-source p{font-size:13px;color:#c4d6cc;line-height:1.68;margin:0}
+.unknown-grid article h3{margin:34px 0 13px}
+.unknown-conclusion{color:#cee2d0;font-size:14px;margin:24px 0 0;line-height:1.55}
+.unknown-conclusion p{margin:0}
+.reflection-top{background:#eef6ee;border:1px solid #d4e4d4;border-radius:11px;padding:19px 19px 20px}
+.reflection-top h3{font:700 20px/1.2 var(--display);margin:0 0 8px}
+.reflection-top>p{font-size:12px;color:#53705e;margin:0 0 17px}
+.reflection-picks{display:grid;grid-template-columns:1fr;gap:7px}
+.reflection-picks label{font-size:12px;font-weight:800;margin-top:12px}
+.reflection-picks label:first-child{margin-top:0}
+.reflection-select{border:1px solid #bfcfc1;border-radius:8px;background:#f9fdf8;color:#253b2e;padding:11px 10px;width:100%;max-width:100%;font-size:12px}
+.reflection-picks textarea{margin:0;min-height:58px}
+.reflection-intro p,.reflection-conclusion p{font-size:13px;line-height:1.67;color:#5e7162;margin:0}
+.reflection-conclusion{padding:15px 18px;background:#e8f1e6;border-left:3px solid #8bae86;border-radius:7px;margin:7px 0}
+.editorial-sources{padding:28px 0 78px}
+.editorial-sources-details .md-body{padding:15px 25px 24px;border-top:1px solid #e4eae3}
+.editorial-sources-details .md-body p{font-size:14px;margin:0}
+.freeform textarea:focus,.reflection-select:focus{border-color:#517b63}
+@media(max-width:1100px){.atlas-wrap{grid-template-columns:minmax(305px,.41fr) 1fr}#myMapsFrame{min-height:550px}}
+@media(max-width:800px){.atlas-wrap{grid-template-columns:1fr}#myMapsFrame{height:510px;min-height:510px}.atlas-panel{min-height:0}.guide-original-text{padding:12px 20px 20px}}
+@media(max-width:580px){.my-maps-footer{flex-direction:column;align-items:flex-start}.path{min-height:0}.editorial-sources{padding-bottom:50px}}
+</style>
+  <script defer src="https://cdn.jsdelivr.net/npm/marked@15.0.12/lib/marked.umd.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+  <script defer>/* Liceum 2027 — frontend-only, no analytics, no backend and no personal-data upload. */
+(function () {
+  'use strict';
+  const STORAGE_KEY = 'liceum-2027-kompas-v1';
+  const validStatuses = ['ciekawi', 'moze', 'nie', 'nie-wiem'];
+  const statusLabels = {
+    ciekawi: 'Chcę poznać bliżej',
+    moze: 'Może',
+    nie: 'Na razie nie',
+    'nie-wiem': 'Za mało wiem'
+  };
+  // Coordinates only where individually cross-checked against Wikidata,
+  // school-published GEO or OpenStreetMap-derived Mapcarta. No geocoding on visit.
+  const schools = [
+    { id:'batory', name:'Batory', district:'Śródmieście', address:'Myśliwiecka 6', main:true, profile:'Dwujęzyczna mat–geo / osobno pre-IB', tags:['dwujezyczne','ib','projekty'], chips:['Matematyka','Angielski','IB?'], color:'#bbdac7', glyph:'B', summary:'Projekty uczniowskie, SGH i UW, dwie bardzo różne ścieżki.', map:[52.22286,21.03497], geo:'Wikidata Q5562775' },
+    { id:'czacki', name:'Czacki', district:'Śródmieście', address:'Polna 5', main:true, profile:'1B — matematyka + biznes i zarządzanie', tags:['biznes','projekty'], chips:['Biznes','Liga klas','Robotyka'], color:'#ffcfb8', glyph:'C', summary:'Biznes i matematyka, szkolna liga siatkówki, teatr i robotyka.', map:[52.21511,21.01865], geo:'GEO opublikowane przez szkołę' },
+    { id:'kochanowski', name:'Kochanowski', district:'Mokotów', address:'Wiktorska 99', main:true, profile:'1C — mat–geo + niemiecki lub hiszpański', tags:['biznes','projekty'], chips:['Mat–geo','FeNIKS','Siatkówka'], color:'#d6d1f1', glyph:'K', summary:'Wspólne festiwale naukowe, języki i międzyklasowe rozgrywki.', map:[52.197068,21.004262], geo:'dostepnemiejsce.pl, Wiktorska 99, budynek szkoły' },
+    { id:'lelewel', name:'Lelewel', district:'Bielany', address:'Kiwerska 3', main:true, profile:'1B — dwujęzyczna ekonomiczna', tags:['dwujezyczne','biznes','projekty'], chips:['Ekonomia','Angielski','Debaty'], color:'#c8e7e0', glyph:'L', summary:'Ekonomia i intensywny angielski, kontakt z uczelniami biznesowymi.', map:[52.28314,20.97051], geo:'OSM via Mapcarta W169313481' },
+    { id:'nowak', name:'Nowak-Jeziorański', district:'Śródmieście', address:'Hoża 11/15', main:true, profile:'1C — matematyka, geografia, WOS', tags:['biznes','projekty'], chips:['GPW','ETF','Matematyka'], color:'#d6e9b6', glyph:'N', summary:'Realne wyjścia na giełdę i konferencje inwestycyjne starszych klas.', map:[52.227147,21.019386], geo:'dostepnemiejsce.pl, Hoża 11/15, budynek szkoły' },
+    { id:'prus', name:'Prus', district:'Praga-Południe', address:'Zwycięzców 7/9', main:true, profile:'A dwujęzyczna mat–geo / osobno pre-IB', tags:['dwujezyczne','ib','projekty'], chips:['Angielski','IB?','UKS'], color:'#f4d3ad', glyph:'P', summary:'Ścieżki dwujęzyczne i IB, tutoring oraz szkolne środowisko sportowe.', map:[52.23101,21.05221], geo:'Wikidata Q9383164' },
+    { id:'reytan', name:'Reytan', district:'Mokotów', address:'Wiktorska 30/32', main:true, profile:'1-3 — matematyka, biznes, hiszpański', tags:['biznes','projekty'], chips:['Biznes','Hiszpański','TARA'], color:'#c7ded8', glyph:'R', summary:'Biznes i hiszpański od podstaw, festiwal muzyczny i historia zajęć SGH.', map:[52.20007,21.01501], geo:'Wikidata Q9367901' },
+    { id:'zamoyski', name:'Zamoyski', district:'Śródmieście', address:'Smolna 30', main:true, profile:'1G — matematyka, geografia, angielski', tags:['projekty'], chips:['Mat–geo–ang','FAZA','SGH'], color:'#ffd9ba', glyph:'Z', summary:'Duży festiwal FAZA i trzy formalne rozszerzenia.', map:[52.23347,21.02285], geo:'OSM via Mapcarta W30621652' },
+    { id:'domeyko', name:'Domeyko', district:'Bielany', address:'Staffa 3/5', main:false, profile:'1C/1D — matematyka, geografia, angielski', tags:['projekty'], chips:['Hala sportowa','IgnaśTV'], color:'#d6e8f5', glyph:'D', summary:'Duża hala, uczniowska telewizja i projekty.', map:[52.27295,20.96183], geo:'Współrzędne obiektu przy tym samym adresie Staffa 3/5, near-place.com' },
+    { id:'hoffmanowa', name:'Hoffmanowa', district:'Śródmieście', address:'Hoża 88', main:false, profile:'1U mat–fiz–ang / mat–geo–WOS', tags:['projekty'], chips:['UW','Matematyka'], color:'#d8d3f3', glyph:'H', summary:'Dodatkowa matematyka z UW w uniwersyteckiej 1U.', map:[52.22486,21.00552], geo:'OSM via Mapcarta W572191510' },
+    { id:'kopernik', name:'Kopernik', district:'Wola', address:'Józefa Bema 76', main:false, profile:'Dwujęzyczna mat–społ. / osobno MYP', tags:['dwujezyczne','ib','biznes','projekty'], chips:['MYP','Angielski','SGH'], color:'#cbe7b7', glyph:'K', summary:'Dwa różne pomysły: matematyczno-społeczna i przygotowanie do IB.', map:[52.23086,20.95934], geo:'kopernik.edu.pl/kontakt, GPS podany bezpośrednio przez szkołę' },
+    { id:'zmichowska', name:'Żmichowska', district:'Śródmieście', address:'Klonowa 16', main:false, profile:'1B mat–geo / 1C ang–WOS–biznes', tags:['biznes','projekty'], chips:['Społeczeństwo','Języki'], color:'#f8cfd0', glyph:'Ż', summary:'Dwie odmienne ścieżki: matematyka–geografia lub społeczno-biznesowa.', map:[52.21281,21.02301], geo:'Lokalizacja szkoły Klonowa 16, near-place.com' }
+  ];
+
+  // Every embedded image is a specifically identified Wikimedia Commons file.
+  // We do not hotlink unlicensed school or social-media photos.
+  const schoolPhotos = {
+    batory:{file:'II Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im. Stefana Batorego w Warszawie 2025.jpg',year:'2025',credit:'Adrian Grycuk / Wikimedia Commons',license:'CC BY 3.0 PL'},
+    czacki:{file:'XXVII Liceum Ogólnokształcące im. Tadeusza Czackiego w Warszawie 2017.jpg',year:'2017',credit:'Adrian Grycuk / Wikimedia Commons',license:'CC BY-SA 3.0 PL'},
+    reytan:{file:'VI Liceum Ogólnokształcące im. Tadeusza Reytana w Warszawie 2020.jpg',year:'2020',credit:'Adrian Grycuk / Wikimedia Commons',license:'CC BY-SA 3.0 PL'},
+    prus:{file:'XXXV Liceum Ogólnokształcące im. Bolesława Prusa w Warszawie 2016.JPG',year:'2016',credit:'Adrian Grycuk / Wikimedia Commons',license:'CC BY-SA 3.0 PL'},
+    lelewel:{file:'XLI L.O. im.J.Lelewela 01.jpg',year:'2017',credit:'Andrzej Błaszczak / Wikimedia Commons',license:'CC BY-SA 4.0'},
+    zamoyski:{file:'XVIII Liceum Ogólnokształcące im. Jana Zamoyskiego w Warszawie 2017.jpg',year:'2017',credit:'Adrian Grycuk / Wikimedia Commons',license:'CC BY-SA 3.0 PL'},
+    kopernik:{file:'XXXIII Liceum Ogólnokształcące Dwujęzyczne im. Mikołaja Kopernika w Warszawie 2017.jpg',year:'2017',credit:'Adrian Grycuk / Wikimedia Commons',license:'CC BY-SA 3.0 PL'},
+    zmichowska:{file:'Liceum Ogólnokształcące z Oddziałami Dwujęzycznymi im. Narcyzy Żmichowskiej w Warszawie 2021.jpg',year:'2021',credit:'Adrian Grycuk / Wikimedia Commons',license:'CC BY-SA 3.0 PL'},
+    hoffmanowa:{file:'IX Liceum Ogólnokształcące im. Klementyny Hoffmanowej 2025.jpg',year:'2025',credit:'Adrian Grycuk / Wikimedia Commons',license:'CC BY 3.0 PL'}
+  };
+  const photoTours = {
+    batory:{url:'https://batory.edu.pl/strefa-kandydata/profile-klas/',label:'Oficjalna strona szkoły'},
+    czacki:{url:'https://www.czacki.edu.pl/dla-kandydatow/fotowycieczka',label:'Fotowycieczka wnętrz · aktualizacja IX 2026'},
+    kochanowski:{url:'https://www.kochanowski.waw.pl/news/?gtnid=814',label:'Zdjęcia uczniowskiego FeNIKS'},
+    lelewel:{url:'https://lelewel.waw.pl/o-szkole/',label:'Oficjalne informacje o szkole'},
+    nowak:{url:'https://jezioranski.edu.pl/galeria-szkoly%2C194%2Cpl',label:'Galeria wnętrz · 2026'},
+    prus:{url:'https://prus.edu.pl/',label:'Oficjalna witryna szkoły'},
+    reytan:{url:'https://reytan.edu.pl/',label:'Oficjalna witryna szkoły'},
+    zamoyski:{url:'https://zamoyski.edu.pl/rekrutacja/wirtualny-spacer/',label:'Wirtualny spacer po salach i sporcie'},
+    domeyko:{url:'https://domeyko.edu.pl/liceum/',label:'Zdjęcia budynku i sportu na stronie szkoły'},
+    hoffmanowa:{url:'https://hoffmanowa.pl/budynek-szkoly-2/',label:'Przewodnik po budynku Hoża 88'},
+    kopernik:{url:'https://kopernik.edu.pl/',label:'Oficjalna witryna szkoły'},
+    zmichowska:{url:'https://www.zmichowska.pl/',label:'Oficjalna witryna szkoły'}
+  };
+  function commonsSource(file){return 'https://commons.wikimedia.org/wiki/File:'+encodeURIComponent(file).replace(/%20/g,'_');}
+  function commonsImage(file){return 'https://commons.wikimedia.org/wiki/Special:FilePath/'+encodeURIComponent(file)+'?width=850';}
+  const researchContext = {
+    batory: {language:'Dwujęzyczna mat–geo; osobna ścieżka pre-IB.',sport:'Reprezentacja chłopców; otwarte treningi niepotwierdzone.',space:'Stołówka, bufet i mediateka wskazane przez szkołę.'},
+    czacki: {language:'Angielski w 1B: 3 godziny obowiązkowe; dodatkowe fakultety warunkowe.',sport:'Liga międzyklasowa (także pierwsze klasy); trening otwarty do sprawdzenia.',space:'Centrum informacji i sala gimnastyczna; komfort przerw nieustalony.'},
+    kochanowski: {language:'1C: matematyka, geografia, niemiecki lub hiszpański.',sport:'Rozgrywki szkolne; regularny otwarty trening do sprawdzenia.',space:'Stołówka uruchomiona we wrześniu 2026, sala i boiska.'},
+    lelewel: {language:'Ekonomia, geografia i matematyka w oddziale dwujęzycznym.',sport:'Udział drużyny chłopców w rozgrywkach 2026; dostępność gry do sprawdzenia.',space:'Stołówka i sala sportowa; standard do obejrzenia.'},
+    nowak: {language:'1C: matematyka, geografia, WOS; angielski nie jest formalnym rozszerzeniem.',sport:'Międzyklasowe rozgrywki; stałe treningi do potwierdzenia.',space:'Oficjalna galeria 2026: sale, szafki, dwie hale, stołówka.'},
+    prus: {language:'A: angielski dwujęzyczny (6 godzin w klasie I); osobne pre-IB.',sport:'Szkolny UKS deklaruje treningi; warunki dla nowych uczniów niepotwierdzone.',space:'Hala i strefa ciszy; internetowe opinie o posiłkach sprzeczne.'},
+    reytan: {language:'1-3: matematyka, biznes i hiszpański od podstaw.',sport:'Sale i Orlik; regularne zajęcia siatkarskie niepotwierdzone.',space:'Sale sportowe; posiłki i szatnie wymagają sprawdzenia.'},
+    zamoyski: {language:'1G: matematyka, geografia i rozszerzony angielski.',sport:'Dwie sale gimnastyczne i siłownia; siatkówka do potwierdzenia.',space:'Wirtualny spacer pokazuje bufet, bibliotekę i przestrzenie do odpoczynku.'},
+    domeyko: {language:'1C/1D: matematyka, geografia, angielski; różne drugie języki.',sport:'Duża hala sportowa; regularna siatkówka niepotwierdzona.',space:'Hala, boiska i posiłki — sprawdzić w zwykłym dniu.'},
+    hoffmanowa: {language:'1U: mat–fiz–ang z dodatkowymi zajęciami UW; nie jest dwujęzyczna.',sport:'Szkolne zaplecze sportowe; otwarte zajęcia do sprawdzenia.',space:'Duża społeczność; rzeczywiste zatłoczenie wymaga wizyty.'},
+    kopernik: {language:'Dwujęzyczna mat–społ. albo MYP z późniejszą kwalifikacją do IB DP.',sport:'Regularny trening siatkówki dla wszystkich niepotwierdzony.',space:'Warunki lokalowe i komfort dnia ucznia wymagają sprawdzenia.'},
+    zmichowska: {language:'1B: mat–geo bez angielskiego rozszerzonego; 1C: ang–WOS–biznes.',sport:'Dostęp do szkolnej siatkówki do ustalenia.',space:'Przestrzeń, schody, szatnie i stołówka — do oceny na miejscu.'}
+  };
+  const schoolTours = {
+    zamoyski:{url:'https://zamoyski.edu.pl/rekrutacja/wirtualny-spacer/',label:'Zobacz wirtualny spacer',detail:'Szkoła pokazuje sale sportowe, bibliotekę i bufet'},
+    nowak:{url:'https://jezioranski.edu.pl/galeria-szkoly%2C194%2Cpl',label:'Zobacz galerię szkoły',detail:'Szkolna galeria przestrzeni z kwietnia 2026'}
+  };
+  const $ = (id) => document.getElementById(id);
+  const mapIndex = new Map(schools.map((s) => [s.id, s]));
+  const model = { markdown:'', sections:new Map(), extras:new Map(), chapters:new Map(), filter:'all', query:'' };
+  const escapeHtml = (str) => String(str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+  let state = { status:{}, notes:{}, bigQuestion:'',question2:'',question3:'',hardNo:'', somethingElse:'',extraSchool:'',topSchools:['','',''],topReasons:['','',''],compare:[],homeAddress:'' };
+  let toastTimer = null;
+
+  function loadState() {
+    try {
+      const parsed = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+      if (parsed && typeof parsed === 'object') {
+        state.status = cleanStatuses(parsed.status);
+        state.notes = cleanNotes(parsed.notes);
+        for (const k of ['bigQuestion','question2','question3','hardNo','somethingElse']) {
+          state[k] = typeof parsed[k] === 'string' ? parsed[k].slice(0,1400) : '';
+        }
+        state.extraSchool = typeof parsed.extraSchool==='string'&&['',...schools.filter(s=>!s.main).map(s=>s.id)].includes(parsed.extraSchool)?parsed.extraSchool:'';
+        state.topSchools = Array.isArray(parsed.topSchools) ? [0,1,2].map(i=>mapIndex.has(parsed.topSchools[i])?parsed.topSchools[i]:'') : ['','',''];
+        state.topReasons = Array.isArray(parsed.topReasons) ? [0,1,2].map(i=>typeof parsed.topReasons[i]==='string'?parsed.topReasons[i].slice(0,700):'') : ['','',''];
+        state.compare = Array.isArray(parsed.compare) ? [...new Set(parsed.compare.filter(id => mapIndex.has(id)))].slice(0,3) : [];
+        state.homeAddress = typeof parsed.homeAddress==='string' ? parsed.homeAddress.slice(0,180) : '';
+        const coord=parsed.homeCoords;
+        state.homeCoords = Array.isArray(coord)&&coord.length===2&&coord.every(Number.isFinite)&&coord[0]>52&&coord[0]<53&&coord[1]>20&&coord[1]<22 ? coord : null;
+      }
+    } catch (_) { /* Browser may disable storage. Site remains fully functional. */ }
+  }
+  function cleanStatuses(obj) {
+    const result = {};
+    for (const school of schools) {
+      if (obj && validStatuses.includes(obj[school.id])) result[school.id] = obj[school.id];
+    }
+    return result;
+  }
+  function cleanNotes(obj) {
+    const result = {};
+    for (const school of schools) {
+      if (obj && typeof obj[school.id] === 'string') result[school.id] = obj[school.id].slice(0,1600);
+    }
+    return result;
+  }
+  function persist() {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      $('saveState').textContent = 'Zapisano na tym urządzeniu';
+    } catch (_) {
+      $('saveState').textContent = 'Pamięć niedostępna — pobierz plik JSON';
+    }
+    updateCounters();
+  }
+  function announce(text) {
+    const t = $('toast'); t.textContent = text; t.classList.add('show');
+    clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove('show'),2600);
+  }
+  function schoolAddress(s) {return s.address+', Warszawa, Polska';}
+  function directMapUrl(s) {
+    return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(s.name+' Liceum '+schoolAddress(s));
+  }
+  function directionsUrl(s) {
+    const dest=encodeURIComponent(schoolAddress(s));
+    const origin=state.homeAddress ? '&origin='+encodeURIComponent(state.homeAddress) : '';
+    return 'https://www.google.com/maps/dir/?api=1&destination='+dest+origin+'&travelmode=transit';
+  }
+  function photoSearchUrl(s) {
+    return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(s.name+' liceum '+schoolAddress(s));
+  }
+  function refreshHomeUI() {
+    $('homeAddress').value=state.homeAddress||'';
+    $('removeHome').hidden=!state.homeAddress;
+    $('homeStatus').textContent=state.homeAddress ?
+      'Punkt startowy zapisany tylko w tej przeglądarce. Google otrzyma go po kliknięciu „Trasa”.':
+      'Punkt startowy nieustawiony. Google otrzyma go dopiero, gdy sam otworzysz trasę.';
+  }
+  function saveHomeAddress() {
+    const value=$('homeAddress').value.trim().slice(0,180);
+    if(!value){announce('Wpisz adres punktu startowego.');return;}
+    state.homeAddress=value;
+    // Kept local; the embedded My Maps layer is read-only and shared.
+    persist();refreshHomeUI();renderMapList();
+    announce('Zapisano punkt startowy w tej przeglądarce.');
+  }
+  function removeHomeAddress() {
+    state.homeAddress='';
+    state.homeCoords=null; // clear legacy Leaflet field on existing browsers
+    persist();refreshHomeUI();renderMapList();
+    announce('Usunięto prywatny punkt startowy.');
+  }
+  function markdownHtml(md) {
+    if (window.marked && window.DOMPurify) {
+      return window.DOMPurify.sanitize(window.marked.parse(md, {gfm:true,breaks:false}), {USE_PROFILES:{html:true}});
+    }
+    // This fallback renders only the trusted, committed guide, never user input.
+    const inline = (value) => escapeHtml(value)
+      .replace(/\[([^\]]+)\]\((https:\/\/[^)\s]+)\)/g, (_,label,url) =>
+        '<a href="'+url+'" target="_blank" rel="noopener noreferrer">'+label+'</a>')
+      .replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>')
+      .replace(/\*([^*]+)\*/g,'<em>$1</em>');
+    return String(md).split(/\n\s*\n/).map(block => {
+      const b = block.trim();
+      if (!b) return '';
+      if (/^---+$/.test(b)) return '<hr>';
+      if (/^###\s/.test(b)) return '<h3>'+inline(b.replace(/^###\s+/,''))+'</h3>';
+      if (/^##\s/.test(b)) return '<h2>'+inline(b.replace(/^##\s+/,''))+'</h2>';
+      if (/^>\s/.test(b)) return '<blockquote><p>'+inline(b.replace(/^>\s+/,'').replace(/\n>\s?/g,' '))+'</p></blockquote>';
+      if (/^\d+\.\s/.test(b) || /^[-*]\s/.test(b)) {
+        const ordered = /^\d+\.\s/.test(b);
+        const li = b.split('\n').filter(Boolean).map(v => '<li>'+inline(v.replace(/^(\d+\.\s+|[-*]\s+)/,''))+'</li>').join('');
+        return ordered ? '<ol>'+li+'</ol>' : '<ul>'+li+'</ul>';
+      }
+      return '<p>'+b.split('\n').map(inline).join(' ')+'</p>';
+    }).join('\n');
+  }
+  function parseGuide(text) {
+    // The complete committed Markdown remains the editorial source of truth:
+    // each of its sections must appear somewhere in the page, not just inside cards.
+    const blocks=text.split(/\n(?=## )/);
+    const main=schools.filter(s=>s.main);
+    for (const block of blocks) {
+      const found=block.match(/^## ([1-8])\.\s+([^\n]+)\n/);
+      if(found) {
+        model.sections.set(main[Number(found[1])-1].id,block.slice(found[0].length).trim());
+      } else if(block.startsWith('## Są też cztery inne szkoły')) {
+        const parts=block.split(/\n(?=### )/);
+        model.chapters.set('otherIntro',parts[0].replace(/^## [^\n]+\n/,'').trim());
+        for(const part of parts.slice(1)) {
+          const m=part.match(/^###\s+([^\n—]+)\s*[—-]/);
+          const school=m&&schools.find(s=>!s.main&&s.name===m[1].trim());
+          if(school)model.extras.set(school.id,part.replace(/^### [^\n]+\n/,'').trim());
+        }
+      } else if(block.startsWith('## 8 propozycji')) {
+        model.chapters.set('intro',block.replace(/^## [^\n]+\n/,'').trim());
+      } else if(block.startsWith('## Krótki przewodnik:')) {
+        model.chapters.set('paths',block.replace(/^## [^\n]+\n/,'').trim());
+      } else if(block.startsWith('## Czego jeszcze')) {
+        model.chapters.set('unknown',block.replace(/^## [^\n]+\n/,'').trim());
+      } else if(block.startsWith('## Twoja krótka odpowiedź')) {
+        const parts=block.split(/\n(?=### Skąd te informacje\?)/);
+        model.chapters.set('reflection',parts[0].replace(/^## [^\n]+\n/,'').trim());
+        if(parts[1])model.chapters.set('sources',parts[1].replace(/^### [^\n]+\n/,'').trim());
+      }
+    }
+  }
+  function renderEditorial() {
+    $('guideIntroduction').innerHTML=markdownHtml(model.chapters.get('intro')||'');
+    // The four alternative schools receive the exact source caveat,
+    // not an implicit ranking.
+    const extras= $('otherIntro');
+    if(extras)extras.innerHTML=markdownHtml(model.chapters.get('otherIntro')||'');
+
+    const pathText=model.chapters.get('paths')||'';
+    const tableLines=pathText.split('\n').filter(l=>l.trim().startsWith('|'));
+    const rows=tableLines.slice(2).map(line=>line.trim().replace(/^\||\|$/g,'').split('|').map(cell=>cell.trim())).filter(x=>x.length===3);
+    if(rows.length!==3)throw Error('Przewodnik ścieżek: oczekiwano trzech pełnych wierszy tabeli');
+    $('pathGrid').innerHTML=rows.map((row,i)=>
+      '<article class="path'+(i===1?' path-featured':'')+'"><span class="path-num">0'+(i+1)+'</span>'+
+      '<h3>'+markdownHtml(row[0]).trim().replace(/^<p>/,'').replace(/<\/p>$/,'')+'</h3>'+
+      '<p class="path-explanation">'+markdownHtml(row[1]).trim().replace(/^<p>/,'').replace(/<\/p>$/,'')+'</p>'+
+      '<div class="path-end"><span>WAŻNY KOMPROMIS</span>'+markdownHtml(row[2])+'</div></article>'
+    ).join('');
+    const at=pathText.lastIndexOf('|');
+    $('pathConclusion').innerHTML=markdownHtml(pathText.slice(at+1).trim());
+
+    const unknownText=model.chapters.get('unknown')||'';
+    const unknownRows=unknownText.split('\n').filter(l=>l.startsWith('- '));
+    if(unknownRows.length!==6)throw Error('W Markdownie oczekiwano sześciu nierozstrzygniętych pytań');
+    const titles=['Ludzie','Siatkówka','Czas i dojazd','Projekty','Budynek','Oferta 2027'];
+    $('unknownGrid').innerHTML=unknownRows.map((line,i)=>
+      '<article><span>0'+(i+1)+' / '+titles[i].toLocaleUpperCase('pl')+'</span>'+
+      '<h3>'+titles[i]+'</h3><div class="unknown-source">'+markdownHtml(line.slice(2))+'</div></article>'
+    ).join('');
+    $('unknownConclusion').innerHTML=markdownHtml(unknownText.split('\n').filter(x=>x.trim()&&!x.startsWith('- ')).join('\n'));
+
+    const reflection=model.chapters.get('reflection')||'';
+    const promptIndex=reflection.indexOf('**1. Trzy propozycje');
+    const closingIndex=reflection.indexOf('**Na tym koniec');
+    $('reflectionIntroduction').innerHTML=markdownHtml(reflection.slice(0,promptIndex>=0?promptIndex:0).trim());
+    $('reflectionConclusion').innerHTML=markdownHtml(closingIndex>=0?reflection.slice(closingIndex).trim():'');
+    $('guideSources').innerHTML=markdownHtml(model.chapters.get('sources')||'');
+  }
+  function card(s, i) {
+    const tagText = s.chips.slice(0,3).map(x=>'<span class="tag">'+escapeHtml(x)+'</span>').join('');
+    const selected = state.compare.includes(s.id);
+    const p=schoolPhotos[s.id];
+    return '<article class="school-card" data-id="'+s.id+'">' +
+      '<div class="card-cover" style="--card-bg:'+s.color+'">'+(p?'<img class="cover-photo" loading="lazy" alt="" src="'+commonsImage(p.file)+'">':'')+'<span class="card-index">'+String(i+1).padStart(2,'0')+' / 08</span><span class="card-label">PROGRAM 2026/27</span><span class="cover-glyph" aria-hidden="true">'+escapeHtml(s.glyph)+'</span></div>' +
+      '<div class="school-card-body"><p class="district">'+escapeHtml(s.district)+'</p><h3>'+escapeHtml(s.name)+'</h3><p class="profile">'+escapeHtml(s.profile)+'</p><div class="tag-row">'+tagText+'</div></div>' +
+      '<div class="card-bottom"><button class="open-card" data-open="'+s.id+'" type="button">Odkryj szkołę <span aria-hidden="true">↗</span></button>' +
+      '<button class="compare-add'+(selected?' selected':'')+'" data-compare="'+s.id+'" type="button" title="Dodaj do porównania" aria-label="'+(selected?'Usuń z':'Dodaj do')+' porównania: '+escapeHtml(s.name)+'" aria-pressed="'+selected+'">'+(selected?'✓':'+')+'</button></div></article>';
+  }
+  function extraCard(s) {
+    return '<article class="extra-card"><small>INNA MOŻLIWOŚĆ</small><h3>'+escapeHtml(s.name)+'</h3><p>'+escapeHtml(s.profile)+'</p><button type="button" data-open="'+s.id+'">Zobacz profil ↗</button></article>';
+  }
+  function normalizeSearch(text) {
+    return String(text||'').toLocaleLowerCase('pl').normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+  }
+  function matching(s) {
+    const allowed = model.filter === 'all' || s.tags.includes(model.filter);
+    const corpus = [s.name,s.profile,s.chips.join(' '),s.summary,s.district,model.sections.get(s.id)||model.extras.get(s.id)||''].join(' ');
+    return allowed && (!model.query || normalizeSearch(corpus).includes(normalizeSearch(model.query)));
+  }
+  function renderCards() {
+    const main = schools.filter(s => s.main);
+    const filtered = main.filter(matching);
+    $('schoolGrid').innerHTML = filtered.length ? filtered.map(s => card(s,main.indexOf(s))).join('') : '<div class="no-results">Brak pasujących wyników. Spróbuj innej frazy lub wyczyść filtry.</div>';
+    $('schoolGrid').querySelectorAll('.cover-photo').forEach(img=>img.addEventListener('error',()=>{img.hidden=true;}));
+    const extras = schools.filter(s => !s.main && matching(s));
+    $('extraGrid').innerHTML = extras.map(extraCard).join('');
+    $('resultCount').textContent = 'Wyświetlasz '+(filtered.length+extras.length)+' z 12 szkół';
+    $('resetFilters').hidden = !model.query && model.filter === 'all';
+    $('filters').querySelectorAll('[data-filter]').forEach(b => {
+      b.classList.toggle('active',b.dataset.filter===model.filter);
+      b.setAttribute('aria-pressed',String(b.dataset.filter===model.filter));
+    });
+  }
+  function renderMapList() {
+    $('mapList').innerHTML = schools.map((s,i)=>
+      '<div class="map-school"><span class="map-school-number">'+String(i+1).padStart(2,'0')+'</span>'+
+      '<span class="map-school-main"><strong class="map-school-name">'+escapeHtml(s.name)+'</strong>'+
+      '<span class="map-school-address">'+escapeHtml(s.address+' · '+s.district)+'</span></span>'+
+      '<span class="map-links"><a target="_blank" rel="noopener noreferrer" title="Lokalizacja Google Maps" href="'+directMapUrl(s)+'">Mapa ↗</a>'+
+      '<a target="_blank" rel="noopener noreferrer" title="Trasa w Google Maps" href="'+directionsUrl(s)+'">Trasa ↗</a></span></div>').join('');
+  }
+  function renderPhotos() {
+    $('photoGrid').innerHTML=schools.map(s=>{
+      const p=schoolPhotos[s.id],tour=photoTours[s.id];
+      const photo=p?'<img loading="lazy" src="'+commonsImage(p.file)+'" alt="Budynek liceum '+escapeHtml(s.name)+' (archiwalna fotografia z '+p.year+' r.)" referrerpolicy="no-referrer">'+
+          '<span class="photo-error" hidden>Fotografia chwilowo niedostępna. Otwórz źródło ↗</span>':
+          '<div class="photo-empty"><span>↗</span><strong>Obejrzyj zdjęcia<br>szkoły</strong><small>Link do materiałów zewnętrznych</small></div>';
+      const source=p ? '<a target="_blank" rel="noopener noreferrer" href="'+commonsSource(p.file)+'">'+escapeHtml(p.credit)+' · '+escapeHtml(p.license)+' ↗</a>' : '<span>Brak zweryfikowanej fotografii Commons</span>';
+      return '<article class="school-photo-card"><div class="school-photo-image" style="--photo-color:'+s.color+'">'+photo+'</div>'+
+        '<div class="school-photo-content"><span class="photo-date">'+(p?p.year+' · Wikimedia Commons':'Materiały szkoły')+'</span>'+
+        '<h3>'+escapeHtml(s.name)+'</h3><p>'+source+'</p>'+
+        '<div class="school-photo-links">'+(tour?'<a target="_blank" rel="noopener noreferrer" href="'+tour.url+'">'+escapeHtml(tour.label)+' ↗</a>':'')+
+        '<a target="_blank" rel="noopener noreferrer" href="'+photoSearchUrl(s)+'">Zdjęcia w Google Maps ↗</a></div></div></article>';
+    }).join('');
+    $('photoGrid').querySelectorAll('img').forEach(img=>{
+      img.addEventListener('error',()=>{
+        img.hidden=true;
+        const msg=img.parentElement.querySelector('.photo-error');
+        if(msg)msg.hidden=false;
+      });
+    });
+  }
+  function renderNotes() {
+    $('notesSchools').innerHTML = schools.map(s => {
+      const st = state.status[s.id] || '';
+      return '<div class="note-school"><div class="note-school-name">'+escapeHtml(s.name)+'</div><div class="note-school-detail">'+escapeHtml(s.profile)+'</div>' +
+        '<select data-notes-status="'+s.id+'" aria-label="Twoje zainteresowanie: '+escapeHtml(s.name)+'">' +
+        '<option value=""'+(!st?' selected':'')+'>Jeszcze nie zaznaczono</option>' +
+        validStatuses.map(key=>'<option value="'+key+'"'+(st===key?' selected':'')+'>'+statusLabels[key]+'</option>').join('') +
+        '</select></div>';
+    }).join('');
+    for(const key of ['bigQuestion','question2','question3','hardNo','somethingElse']) $(key).value = state[key]||'';
+    for(let i=1;i<=3;i++) {
+      $('topSchool'+i).innerHTML='<option value="">Wybierz lub zostaw puste</option>'+schools.map(s=>
+        '<option value="'+s.id+'"'+(state.topSchools[i-1]===s.id?' selected':'')+'>'+escapeHtml(s.name+' — '+s.profile)+'</option>').join('');
+      $('topSchool'+i).value=state.topSchools[i-1]||'';
+      $('topReason'+i).value=state.topReasons[i-1]||'';
+    }
+    $('extraSchool').innerHTML='<option value="">Jeszcze nie wiem</option>'+
+      schools.filter(s=>!s.main).map(s=>'<option value="'+s.id+'"'+(state.extraSchool===s.id?' selected':'')+'>'+escapeHtml(s.name)+'</option>').join('');
+    $('extraSchool').value=state.extraSchool;
+    updateCounters();
+  }
+  function updateCounters() {
+    const selected = Object.values(state.status).filter(x => x === 'ciekawi').length;
+    const answered = Object.keys(state.status).length;
+    $('navCount').textContent = selected;
+    $('statusSummary').textContent = answered+' z 12 szkół ma Twój wstępny status · '+selected+' chcesz poznać bliżej';
+    $('compareTray').hidden = state.compare.length === 0;
+    $('trayText').textContent = state.compare.length+' z 3 do porównania · '+state.compare.map(id=>mapIndex.get(id).name).join(', ');
+    $('openCompare').disabled = state.compare.length < 2;
+  }
+  function statusSelector(s) {
+    const value = state.status[s.id] || '';
+    return '<label for="detailStatus">To mnie…</label><select id="detailStatus" class="dialog-select">' +
+      '<option value="">Jeszcze nie wiem</option>' +
+      validStatuses.map(k=>'<option value="'+k+'"'+(value===k?' selected':'')+'>'+statusLabels[k]+'</option>').join('') +
+      '</select>';
+  }
+  function showSchool(id, updateHash=true) {
+    const s = mapIndex.get(id);
+    if (!s) return;
+    const md = model.sections.get(id) || model.extras.get(id);
+    const selected = state.compare.includes(id);
+    $('dialogContent').innerHTML =
+      '<div class="detail-cover" style="--detail-color:'+s.color+'"><span class="detail-cover-number">'+escapeHtml(s.glyph)+'</span><span class="detail-cover-label">WARSZAWA / '+escapeHtml(s.district.toUpperCase())+'</span></div>'+
+      '<h2 class="detail-title" id="dialogTitle">'+escapeHtml(s.name)+'</h2><p class="detail-subtitle">'+escapeHtml(s.profile)+'</p>'+
+      '<div class="detail-tags">'+s.chips.map(x=>'<span class="tag">'+escapeHtml(x)+'</span>').join('')+'</div>' +
+      '<div class="detail-controls">'+statusSelector(s)+'<label for="detailNote">Moja notatka lub pytanie do ucznia tej szkoły</label>' +
+      '<textarea id="detailNote" class="detail-note" maxlength="1600" placeholder="Co Cię ciekawi, co budzi wątpliwości?"></textarea></div>' +
+      (schoolTours[id] ? '<div class="link-callout"><div><strong>'+escapeHtml(schoolTours[id].label)+'</strong><br><span>'+escapeHtml(schoolTours[id].detail)+'</span></div><a href="'+schoolTours[id].url+'" target="_blank" rel="noopener noreferrer">Otwórz ↗</a></div>' : '') +
+      '<div class="md-body">'+(md ? markdownHtml(md) : '<p>Pełny opis nie został jeszcze załadowany. <a href="./guide.md">Otwórz wersję tekstową</a>.</p>')+'</div>' +
+      '<div class="detail-bottom"><a href="'+directMapUrl(s)+'" target="_blank" rel="noopener noreferrer" class="button button-outline">Lokalizacja Google ↗</a>' +
+      '<a href="'+directionsUrl(s)+'" target="_blank" rel="noopener noreferrer" class="button button-outline">Pokaż dojazd ↗</a>'+
+      '<button class="button button-dark" id="dialogCompare" type="button">'+(selected?'Usuń z porównania':'Dodaj do porównania')+' <span>↗</span></button></div>';
+    // Open primary sources in a new tab without losing the student's unsent notes.
+    $('dialogContent').querySelectorAll('.md-body a[href^="http"]').forEach(link=>{
+      link.target='_blank';link.rel='noopener noreferrer';
+    });
+    $('detailNote').value = state.notes[id] || '';
+    $('detailStatus').addEventListener('change',e=>{const v=e.target.value;if(validStatuses.includes(v)) state.status[id]=v;else delete state.status[id];persist();renderCards();renderNotes();});
+    $('detailNote').addEventListener('input',e=>{state.notes[id]=e.target.value.slice(0,1600);persist();});
+    $('dialogCompare').addEventListener('click',()=>{toggleCompare(id);$('dialogCompare').textContent=state.compare.includes(id)?'Usuń z porównania':'Dodaj do porównania';});
+    const dialog = $('schoolDialog');
+    if (!dialog.open) dialog.showModal();
+    dialog.scrollTop = 0;
+    document.body.classList.add('dialog-open');
+    if (updateHash) history.replaceState(null,'','#szkola/'+id);
+  }
+  function closeSchool() {
+    const d=$('schoolDialog');if(d.open)d.close();
+    document.body.classList.remove('dialog-open');
+    if(location.hash.startsWith('#szkola/'))history.replaceState(null,'','#odkrywaj');
+  }
+  function toggleCompare(id) {
+    if (state.compare.includes(id)) state.compare=state.compare.filter(x=>x!==id);
+    else if (state.compare.length < 3) state.compare.push(id);
+    else {announce('Wybierz maksymalnie 3 szkoły.');return;}
+    persist();renderCards();updateCounters();
+  }
+  function openComparison() {
+    if (state.compare.length < 2) {announce('Wybierz co najmniej dwie szkoły.');return;}
+    const selected=state.compare.map(id=>mapIndex.get(id));
+    const rows = [
+      ['Profil 2026/27',s=>s.profile],
+      ['Języki i droga matury',s=>researchContext[s.id].language],
+      ['Przykłady szkolnych działań',s=>s.summary],
+      ['Siatkówka',s=>researchContext[s.id].sport],
+      ['Budynek i posiłki',s=>researchContext[s.id].space],
+      ['Nadal nie wiemy',()=> 'Atmosfera tej klasy, praca domowa, realny dojazd i oferta 2027/28.'],
+      ['Twoja reakcja',s=>statusLabels[state.status[s.id]] || 'Jeszcze bez odpowiedzi'],
+      ['Twoja notatka',s=>state.notes[s.id] || '—']
+    ];
+    const head='<thead><tr><th scope="col">Obszar</th>'+selected.map(s=>'<th scope="col">'+escapeHtml(s.name)+'</th>').join('')+'</tr></thead>';
+    const body='<tbody>'+rows.map(row=>'<tr><th scope="row">'+escapeHtml(row[0])+'</th>'+selected.map(s=>'<td>'+escapeHtml(row[1](s))+'</td>').join('')+'</tr>').join('')+'</tbody>';
+    $('compareBody').innerHTML = '<div style="overflow:auto"><table class="compare-table">'+head+body+'</table></div><p class="small-note">Wszystkie profile są z historycznej oferty 2026/27. Wydarzenia szkolne nie są gwarancją ich powtórzenia w konkretnej klasie; nie punktujemy szkół ani atmosfery.</p>';
+    $('compareDialog').showModal();
+    document.body.classList.add('dialog-open');
+  }
+  function closeComparison() {if($('compareDialog').open)$('compareDialog').close();document.body.classList.remove('dialog-open');}
+  function doExportText() {
+    const lines = [
+      'MOJE LICEUM 2027 — PIERWSZE WRAŻENIA',
+      'To moje robocze notatki, nie końcowa decyzja.',
+      'Źródło: interaktywny przewodnik Liceum 2027.',
+      '',
+      ...schools.flatMap(s => [
+        s.name+' — '+(statusLabels[state.status[s.id]] || 'Bez odpowiedzi'),
+        ...(state.notes[s.id] ? ['Pytanie/notatka: '+state.notes[s.id]] : []),
+        ''
+      ]),
+      'TRZY PROPOZYCJE, KTÓRE MNIE CIEKAWIĄ',
+      ...[0,1,2].map(i=> (i+1)+'. '+(mapIndex.get(state.topSchools[i])?.name||'—')+' — '+(state.topReasons[i]||'bez uzasadnienia')),
+      '',
+      'TRZY PYTANIA DO UCZNIÓW',
+      '1. '+(state.bigQuestion||'—'),'2. '+(state.question2||'—'),'3. '+(state.question3||'—'),'',
+      'CO BUDZI MOJE OBAWY', state.hardNo||'—','',
+      'DODATKOWA SZKOŁA', mapIndex.get(state.extraSchool)?.name||'—','',
+      'CZEGO BRAKUJE', state.somethingElse||'—','',
+      'Nie przesyłaj pliku publicznie bez zastanowienia się, co zawiera.'
+    ];
+    const url=URL.createObjectURL(new Blob(['\ufeff'+lines.join('\n')],{type:'text/plain;charset=utf-8'}));
+    const a=document.createElement('a');a.href=url;a.download='moje-liceum-2027-podsumowanie.txt';document.body.appendChild(a);a.click();a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url),1500);
+    announce('Pobrano czytelne podsumowanie. Nic nie zostało wysłane.');
+  }
+  function doExport() {
+    const out={
+      schema:'liceum2027-student-notes-v1',
+      exportedAt:new Date().toISOString(),
+      disclaimer:'Notatki zapisane lokalnie przez ucznia, nie formalna decyzja.',
+      statuses:state.status,notes:state.notes,
+      bigQuestion:state.bigQuestion,question2:state.question2,question3:state.question3,
+      hardNo:state.hardNo,somethingElse:state.somethingElse,extraSchool:state.extraSchool,
+      topSchools:state.topSchools,topReasons:state.topReasons
+    };
+    const url=URL.createObjectURL(new Blob([JSON.stringify(out,null,2)],{type:'application/json'}));
+    const a=document.createElement('a');a.href=url;a.download='moje-liceum-2027-notatki.json';document.body.appendChild(a);a.click();a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url),1000);
+    announce('Notatki pobrane. Nic nie zostało wysłane.');
+  }
+  async function doImport(file) {
+    if(!file || file.size>100000){announce('Wybierz niewielki plik JSON z notatkami.');return;}
+    try {
+      const o=JSON.parse(await file.text());
+      if(o.schema!=='liceum2027-student-notes-v1')throw Error('schema');
+      if(!confirm('Wczytać notatki? Zastąpią obecne odpowiedzi w tej przeglądarce.'))return;
+      state.status=cleanStatuses(o.statuses);state.notes=cleanNotes(o.notes);
+      for (const key of ['bigQuestion','question2','question3','hardNo','somethingElse'])state[key]=typeof o[key]==='string'?o[key].slice(0,1400):'';
+      state.extraSchool=schools.some(s=>!s.main&&s.id===o.extraSchool)?o.extraSchool:'';
+      state.topSchools=Array.isArray(o.topSchools)?[0,1,2].map(i=>mapIndex.has(o.topSchools[i])?o.topSchools[i]:''):['','',''];
+      state.topReasons=Array.isArray(o.topReasons)?[0,1,2].map(i=>typeof o.topReasons[i]==='string'?o.topReasons[i].slice(0,700):''):['','',''];
+      state.compare=[];
+      persist();renderNotes();renderCards();announce('Wczytano Twoje notatki.');
+    } catch (_) {announce('Niepoprawny lub niezgodny plik notatek.');}
+  }
+  function attachEvents() {
+    $('schoolGrid').addEventListener('click',e=>{
+      const open=e.target.closest('[data-open]'),compare=e.target.closest('[data-compare]');
+      if(open)showSchool(open.dataset.open);
+      if(compare)toggleCompare(compare.dataset.compare);
+    });
+    $('extraGrid').addEventListener('click',e=>{const b=e.target.closest('[data-open]');if(b)showSchool(b.dataset.open);});
+    $('filters').addEventListener('click',e=>{
+      const b=e.target.closest('[data-filter]');
+      if(b){model.filter=b.dataset.filter;renderCards();}
+    });
+    $('search').addEventListener('input',e=>{model.query=e.target.value.trim();renderCards();});
+    $('resetFilters').addEventListener('click',()=>{model.filter='all';model.query='';$('search').value='';renderCards();});
+    $('closeDialog').addEventListener('click',closeSchool);
+    $('schoolDialog').addEventListener('click',e=>{if(e.target===$('schoolDialog'))closeSchool();});
+    $('schoolDialog').addEventListener('close',()=>{
+      document.body.classList.remove('dialog-open');
+      if(location.hash.startsWith('#szkola/')) history.replaceState(null,'','#odkrywaj');
+    });
+    $('closeCompare').addEventListener('click',closeComparison);
+    $('compareDialog').addEventListener('click',e=>{if(e.target===$('compareDialog'))closeComparison();});
+    $('compareDialog').addEventListener('close',()=>document.body.classList.remove('dialog-open'));
+    $('saveHome').addEventListener('click',saveHomeAddress);
+    $('removeHome').addEventListener('click',removeHomeAddress);
+    $('homeAddress').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();saveHomeAddress();}});
+    $('notesSchools').addEventListener('change',e=>{
+      const id=e.target.dataset.notesStatus;
+      if(!mapIndex.has(id))return;
+      if(validStatuses.includes(e.target.value))state.status[id]=e.target.value;
+      else delete state.status[id];
+      persist();renderCards();updateCounters();
+    });
+    for(const key of ['bigQuestion','question2','question3','hardNo','somethingElse']){
+      $(key).addEventListener('input',e=>{state[key]=e.target.value.slice(0,1400);persist();});
+    }
+    for(let i=1;i<=3;i++){
+      $('topSchool'+i).addEventListener('change',e=>{state.topSchools[i-1]=mapIndex.has(e.target.value)?e.target.value:'';persist();});
+      $('topReason'+i).addEventListener('input',e=>{state.topReasons[i-1]=e.target.value.slice(0,700);persist();});
+    }
+    $('extraSchool').addEventListener('change',e=>{
+      state.extraSchool=schools.some(s=>!s.main&&s.id===e.target.value)?e.target.value:'';
+      persist();
+    });
+    $('exportText').addEventListener('click',doExportText);
+    $('exportAnswers').addEventListener('click',doExport);
+    $('importAnswers').addEventListener('click',()=>$('importFile').click());
+    $('importFile').addEventListener('change',e=>{doImport(e.target.files[0]);e.target.value='';});
+    $('clearAnswers').addEventListener('click',()=>{
+      if(!confirm('Na pewno usunąć wszystkie odpowiedzi i notatki z tej przeglądarki?'))return;
+      const origin=state.homeAddress;
+      state={status:{},notes:{},bigQuestion:'',question2:'',question3:'',hardNo:'',somethingElse:'',extraSchool:'',topSchools:['','',''],topReasons:['','',''],compare:[],homeAddress:origin};persist();renderNotes();renderCards();announce('Wyczyszczono odpowiedzi. Punkt startowy pozostał bez zmian.');
+    });
+    $('clearCompare').addEventListener('click',()=>{state.compare=[];persist();renderCards();});
+    $('openCompare').addEventListener('click',openComparison);
+    $('menuToggle').addEventListener('click',()=>{
+      const nav=document.querySelector('.topnav');const open=nav.classList.toggle('open');
+      $('menuToggle').setAttribute('aria-expanded',open?'true':'false');
+    });
+    document.querySelectorAll('.topnav a').forEach(a=>a.addEventListener('click',()=>{document.querySelector('.topnav').classList.remove('open');$('menuToggle').setAttribute('aria-expanded','false');}));
+    document.addEventListener('keydown',e=>{
+      if(e.key==='/' && !['INPUT','TEXTAREA'].includes(document.activeElement.tagName) && !$('schoolDialog').open && !$('compareDialog').open){e.preventDefault();$('search').focus();}
+    });
+    window.addEventListener('hashchange',handleHash);
+  }
+  function handleHash() {
+    const match=location.hash.match(/^#szkola\/([a-z]+)$/);
+    if(match && mapIndex.has(match[1]) && model.markdown){showSchool(match[1],false);}
+  }
+  async function start() {
+    loadState();
+    attachEvents();
+    // A family-only deep link may contain an address in the URL fragment.
+    // It is consumed locally, then removed from browser history.
+    let seededHome=false;
+    if(location.hash.startsWith('#dom=')){
+      try {
+        const candidate=decodeURIComponent(location.hash.slice(5)).slice(0,180);
+        if(candidate){state.homeAddress=candidate;state.homeCoords=null;persist();seededHome=true;}
+      } catch (_){}
+      history.replaceState(null,'',location.pathname+location.search+'#atlas');
+    }
+    renderMapList();renderPhotos();refreshHomeUI();renderNotes();
+    if(seededHome) refreshHomeUI();
+    try {
+      const inlineGuide=document.getElementById('embeddedGuide');
+      const response=inlineGuide?{ok:true,text:async()=>inlineGuide.textContent}:await fetch('./guide.md',{cache:'no-cache'});
+      if(!response.ok)throw Error('HTTP '+response.status);
+      model.markdown=await response.text();
+      parseGuide(model.markdown);
+      if(model.sections.size!==8 || model.extras.size!==4)throw Error('Niepełna struktura Markdown: '+model.sections.size+' + '+model.extras.size);
+      renderEditorial();renderCards();handleHash();
+    } catch(err) {
+      $('schoolGrid').innerHTML='<div class="no-results">Nie udało się wczytać pełnych kart. <a href="./guide.md">Otwórz wersję tekstową ↗</a>. <small style="display:block;margin-top:12px">Przy otwieraniu pliku jako file:// przeglądarka blokuje fetch. Użyj GitHub Pages lub lokalnego serwera HTTP.</small></div>';
+      $('resultCount').textContent='Nie udało się załadować';
+      console.error('Liceum 2027: content read failed',err);
+    }
+    updateCounters();
+  }
+  document.addEventListener('DOMContentLoaded',start);
+})();</script>
+</head>
+<body>
+  <a class="skip" href="#odkrywaj">Przejdź do szkół</a>
+  <header class="site-header">
+    <a class="brand" href="#start" aria-label="Liceum 2027 — początek">
+      <span class="brand-symbol" aria-hidden="true">L<span>·</span></span>
+      <span class="brand-copy">LICEUM <b>27</b><small>Twój wybór, Twoja historia.</small></span>
+    </a>
+    <nav class="topnav" aria-label="Nawigacja">
+      <a href="#odkrywaj">Szkoły</a><a href="#atlas">Mapa</a><a href="#drogi">Ścieżki</a><a href="#notatki">Mój kompas <span class="nav-count" id="navCount">0</span></a>
+    </nav>
+    <button class="mobile-menu" id="menuToggle" type="button" aria-label="Pokaż menu" aria-expanded="false">Menu <span>☰</span></button>
+  </header>
+
+  <main>
+    <section id="start" class="hero">
+      <div class="hero-inner shell">
+        <div class="hero-topline"><span class="signal-dot"></span> PRZEWODNIK / WARSZAWA / NABÓR 2027</div>
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow">NIE RANKING. NIE TEST. TWOJA DECYZJA.</p>
+            <h1>Gdzie zaczną się <em>Twoje</em> cztery lata?</h1>
+            <p class="hero-lead">12 szkół. Różne pomysły na naukę, ludzi i życie po lekcjach. Sprawdź, co Cię naprawdę interesuje — bez presji wybierania zwycięzcy.</p>
+            <div class="hero-actions">
+              <a class="button button-lime" href="#odkrywaj">Poznaj szkoły <span aria-hidden="true">↗</span></a>
+              <a class="button button-ghost" href="#jak-korzystac">Jak to działa <span aria-hidden="true">↓</span></a>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="orbit orbit-1"></div><div class="orbit orbit-2"></div><div class="orbit orbit-3"></div>
+            <div class="hero-art-center"><span>8</span><small>NA START</small></div>
+            <div class="orbit-label label-a">POMYSŁY</div><div class="orbit-label label-b">LUDZIE</div><div class="orbit-label label-c">SPORT</div>
+            <div class="hero-noise"></div>
+          </div>
+        </div>
+        <div class="hero-footer"><span>01 — Odkrywanie</span><span>02 — Własne notatki</span><span>03 — Rozmowy z uczniami</span></div>
+      </div>
+    </section>
+
+    <section id="jak-korzystac" class="intro shell section">
+      <div><p class="overline">ZANIM ZACZNIESZ</p><h2>To ma być o Tobie.<br><span class="muted">Nie o tabelce wyników.</span></h2></div>
+      <div class="intro-side">
+        <p>Nie znamy jeszcze Twoich przyszłych kolegów, czasu dojazdu ani tego, czy każda szkoła da Ci regularnie grać w siatkówkę. To normalne. Tutaj są <b>potwierdzone przykłady</b>, różnice między profilami i pytania do sprawdzenia.</p>
+        <div class="legend"><span><i class="legend-square mint"></i> Oferty 2026/27</span><span><i class="legend-square coral"></i> Zrealizowane projekty</span><span><i class="legend-square gray"></i> Niewiadome</span></div>
+      </div>
+    </section>
+
+    <section class="shell guide-context-wrap">
+      <details class="guide-context-details" open>
+        <summary><span>Jak korzystać z przewodnika — ważne informacje</span><span aria-hidden="true">＋</span></summary>
+        <div id="guideIntroduction" class="md-body guide-original-text"></div>
+      </details>
+    </section>
+
+    <section class="principles shell" aria-label="Cztery zasady tego przewodnika">
+      <div class="principle"><span>01</span><p><b>Wybierasz klasę, nie logo.</b> Dwa profile tej samej szkoły mogą być bardzo różne.</p></div>
+      <div class="principle"><span>02</span><p><b>Patrzymy na ofertę 2026/27.</b> Twój nabór 2027/28 jeszcze nie jest potwierdzony.</p></div>
+      <div class="principle"><span>03</span><p><b>Wydarzenie ≠ codzienność.</b> Opisany projekt starszej klasy nie jest obietnicą dla Ciebie.</p></div>
+      <div class="principle"><span>04</span><p><b>Nie znamy jeszcze wszystkiego.</b> Ludzie, dojazdy i regularna siatkówka wymagają sprawdzenia.</p></div>
+    </section>
+
+    <section id="odkrywaj" class="schools-area section">
+      <div class="shell">
+        <div class="section-head">
+          <div><p class="overline">01 / SZKOŁY</p><h2>Odkryj swój <em>kierunek.</em></h2><p class="subtle">Pierwsza ósemka to różne ścieżki do poznania, nie „najlepsza ósemka”. Pozostałe cztery też są w grze.</p></div>
+          <span class="counter-ornament">08<span>/12</span></span>
+        </div>
+        <div class="toolbar">
+          <label class="searchbox" for="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Szukaj szkoły, profilu, projektu…" autocomplete="off"><span class="shortcut">/</span></label>
+          <div class="filter-list" id="filters" role="group" aria-label="Filtruj szkoły">
+            <button class="filter active" data-filter="all" aria-pressed="true">Wszystkie</button>
+            <button class="filter" data-filter="biznes" aria-pressed="false">Biznes / ekonomia</button>
+            <button class="filter" data-filter="dwujezyczne" aria-pressed="false">Dwujęzyczne</button>
+            <button class="filter" data-filter="ib" aria-pressed="false">Droga IB</button>
+            <button class="filter" data-filter="projekty" aria-pressed="false">Projekty</button>
+          </div>
+        </div>
+        <div class="result-line"><span id="resultCount">Ładowanie szkół…</span><button type="button" id="resetFilters" class="text-button" hidden>Wyczyść filtry ↺</button></div>
+        <div id="schoolGrid" class="school-grid" aria-live="polite">
+          <div class="loading">Ładuję przewodnik…</div>
+        </div>
+        <div class="other-head"><span class="line"></span><h3>Poza pierwszą ósemką</h3><span class="line"></span></div>
+        <div id="otherIntro" class="other-intro md-body"></div>
+        <div id="extraGrid" class="extra-grid"></div>
+      </div>
+    </section>
+
+    <section class="manifesto">
+      <div class="shell manifesto-layout"><p class="overline light">WAŻNA ZASADA</p><p class="manifesto-statement">To, że szkoła ma drużynę, nie znaczy, że <em>Ty</em> będziesz mógł w niej co tydzień grać.</p><div class="manifesto-foot">Hala ≠ liga ≠ trening dla każdego. <span>Sprawdzimy to.</span></div></div>
+    </section>
+
+    <section id="atlas" class="section shell atlas-section">
+      <div class="section-head">
+        <div><p class="overline">02 / MAPA WARSZAWY</p><h2>Wszystkie szkoły.<br><em>Jedno spojrzenie.</em></h2>
+          <p class="subtle">To mapa Google My Maps przygotowana specjalnie dla naszej dwunastki. Możesz otworzyć ją w Google, a przy wybranej szkole jednym kliknięciem sprawdzić dojazd.</p></div>
+      </div>
+      <div class="atlas-wrap">
+        <div class="atlas-left">
+          <div class="atlas-kicker">12 SZKÓŁ · GOOGLE MAPS</div>
+          <div class="home-settings">
+            <div class="home-setting-head"><span aria-hidden="true">⌂</span><strong>Twój punkt startowy</strong><small>tylko w przeglądarce</small></div>
+            <label for="homeAddress">Dom / punkt startowy dla tras</label>
+            <input id="homeAddress" type="text" autocomplete="off" maxlength="180" placeholder="Wpisz adres, z którego chcesz dojeżdżać">
+            <div class="home-buttons">
+              <button id="saveHome" type="button">Zapisz punkt startowy ↗</button>
+              <button id="removeHome" type="button" hidden>Usuń</button>
+            </div>
+            <p class="home-status" id="homeStatus">Adres pozostaje na tym komputerze. Google otrzyma go dopiero po kliknięciu trasy.</p>
+          </div>
+          <div id="mapList" class="map-list"></div>
+          <p class="atlas-small">Przy każdej szkole: „Mapa” otwiera jej lokalizację, „Trasa” uruchamia Google Maps z Twoim zapisanym punktem startowym. Nie wyliczamy niepotwierdzonych czasów dojazdu.</p>
+          <div class="map-utility"><a href="https://www.google.com/maps/d/u/0/viewer?mid=1R2gg_wK9NEIWKnXAVA4ZgqS8GdwbjwM" target="_blank" rel="noopener noreferrer">Otwórz mapę Google My Maps ↗</a></div>
+        </div>
+        <div class="atlas-panel mymaps-panel">
+          <iframe id="myMapsFrame" title="Nasze 12 warszawskich liceów — Google My Maps" src="https://www.google.com/maps/d/embed?mid=1R2gg_wK9NEIWKnXAVA4ZgqS8GdwbjwM" referrerpolicy="strict-origin-when-cross-origin" loading="eager" allowfullscreen></iframe>
+          <div class="my-maps-footer"><span><i aria-hidden="true" class="maps-online-dot"></i> Google My Maps · 12 wybranych szkół</span>
+            <a href="https://www.google.com/maps/d/u/0/viewer?mid=1R2gg_wK9NEIWKnXAVA4ZgqS8GdwbjwM" target="_blank" rel="noopener noreferrer">Otwórz mapę w Google ↗</a>
+          </div>
+          <p class="map-embed-note">Jeżeli mapa nie wyświetla się w ramce, otwórz ją powyższym linkiem. W ustawieniach Google My Maps właściciel powinien zezwolić na publiczne wyświetlanie i osadzanie mapy. Punkt startowy domu jest prywatny i nie jest dodawany do udostępnionej mapy.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="photo-section shell section" aria-label="Zdjęcia i fotogalerie szkół">
+      <div class="section-head"><div><p class="overline">03 / PRAWDZIWE MIEJSCA</p><h2>Spójrz na szkoły.</h2>
+        <p class="subtle">Zdjęcia z Wikimedia Commons z autorem, rokiem i licencją. Tam, gdzie nie znaleźliśmy fotografii z otwartą licencją, pokazujemy link do oficjalnych materiałów lub zdjęć Google Maps — bez podstawiania przypadkowych budynków.</p></div></div>
+      <div id="photoGrid" class="school-photo-grid" aria-live="polite"></div>
+      <p class="small-note">Zdjęcia historyczne pokazują konkretne budynki, nie aktualny stan sal, stołówki ani szatni. Wykorzystane fotografie mogą być kadrowane na stronie; oryginały i warunki licencji są dostępne przy każdej fotografii.</p>
+    </section>
+
+    <section id="drogi" class="paths-section section">
+      <div class="shell">
+        <div class="section-head"><div><p class="overline">04 / NAUKA</p><h2>Trzy ścieżki.<br>Wiele przyszłości.</h2><p class="subtle">Żadna nie jest automatycznie „lepsza”. Zobacz, czym różnią się w praktyce.</p></div></div>
+        <div id="pathGrid" class="path-grid" aria-live="polite"></div>
+        <p id="pathConclusion" class="path-conclusion"></p>
+      </div>
+    </section>
+
+    <section id="otwarte" class="open-questions section">
+      <div class="shell">
+        <div class="section-head">
+          <div><p class="overline">05 / ZANIM WYBIERZESZ</p><h2>Ważne rzeczy,<br>których jeszcze <em>nie wiemy.</em></h2><p class="subtle">Brak informacji nie jest wadą szkoły. To po prostu dobra lista tematów na rozmowy z prawdziwymi uczniami.</p></div>
+        </div>
+        <div id="unknownGrid" class="unknown-grid"></div>
+        <p id="unknownConclusion" class="unknown-conclusion"></p>
+      </div>
+    </section>
+
+    <section id="notatki" class="notes-section section shell">
+      <div class="section-head"><div><p class="overline">06 / TWÓJ KOMPAS</p><h2>Co naprawdę <em>Cię ciekawi?</em></h2><p class="subtle">Nie musisz wystawiać ocen. Zanotuj to, co chcesz sprawdzić u prawdziwych uczniów.</p></div><span class="save-state" id="saveState">Notatki tylko w tej przeglądarce</span></div>
+      <div class="privacy-line"><span aria-hidden="true">◉</span><p><b>Prywatność:</b> odpowiedzi zapisują się tylko lokalnie w tej przeglądarce. Nie wysyłamy ich na serwer ani do GitHuba. Możesz pobrać czytelne podsumowanie .txt lub plik JSON i samodzielnie przekazać je rodzicowi. Na wspólnym urządzeniu ktoś inny może zobaczyć zapisane notatki.</p></div>
+      <div class="notes-layout">
+        <div>
+          <h3>Twoje zainteresowania</h3>
+          <div id="statusSummary" class="status-summary"></div>
+          <div class="notes-school-list" id="notesSchools"></div>
+        </div>
+        <div class="freeform">
+          <div class="reflection-intro" id="reflectionIntroduction"></div>
+          <div class="reflection-top">
+            <h3>Trzy propozycje, które najbardziej Cię ciekawią</h3>
+            <p>Możesz zmienić zdanie. To tylko pierwszy sygnał, co warto dalej sprawdzić.</p>
+            <div class="reflection-picks">
+              <label for="topSchool1">1. Pierwsza propozycja</label><select id="topSchool1" class="reflection-select" aria-label="Pierwsza ciekawa szkoła"></select>
+              <textarea id="topReason1" rows="2" maxlength="700" placeholder="Co Cię w niej zaciekawiło?"></textarea>
+              <label for="topSchool2">2. Druga propozycja</label><select id="topSchool2" class="reflection-select" aria-label="Druga ciekawa szkoła"></select>
+              <textarea id="topReason2" rows="2" maxlength="700" placeholder="Dlaczego?"></textarea>
+              <label for="topSchool3">3. Trzecia propozycja</label><select id="topSchool3" class="reflection-select" aria-label="Trzecia ciekawa szkoła"></select>
+              <textarea id="topReason3" rows="2" maxlength="700" placeholder="Dlaczego?"></textarea>
+            </div>
+          </div>
+          <label for="bigQuestion">Pytanie nr 1 do licealisty</label>
+          <textarea id="bigQuestion" rows="4" maxlength="1400" placeholder="Np. jak naprawdę wygląda zwykły tydzień w tej klasie?"></textarea>
+          <label for="question2">Pytanie nr 2 do licealisty</label>
+          <textarea id="question2" rows="2" maxlength="1400" placeholder="Drugie pytanie…"></textarea>
+          <label for="question3">Pytanie nr 3 do licealisty</label>
+          <textarea id="question3" rows="2" maxlength="1400" placeholder="Trzecie pytanie…"></textarea>
+          <label for="hardNo">Co brzmi najmniej atrakcyjnie albo budzi Twoje obawy?</label>
+          <textarea id="hardNo" rows="3" maxlength="1400" placeholder="To może być bardzo konkretna rzecz."></textarea>
+          <label for="extraSchool">Czy chcesz dokładniej poznać którąś z czterech dodatkowych szkół?</label>
+          <select id="extraSchool" class="reflection-select" aria-label="Dodatkowa szkoła do poznania"></select>
+          <label for="somethingElse">Co ważnego pominęliśmy, nawet jeżeli nie znajduje się na tej liście?</label>
+          <textarea id="somethingElse" rows="3" maxlength="1400" placeholder="Może inna szkoła, sport, ludzie, pomysł…"></textarea>
+          <div id="reflectionConclusion" class="reflection-conclusion"></div>
+          <div class="export-controls">
+            <button class="button button-dark" id="exportText" type="button">Pobierz podsumowanie .txt <span>↓</span></button>
+            <button class="button button-outline" id="exportAnswers" type="button">Eksport JSON</button>
+            <button class="button button-outline" id="importAnswers" type="button">Wczytaj JSON</button>
+            <input type="file" id="importFile" accept=".json,application/json" hidden>
+          </div>
+          <button class="danger-link" id="clearAnswers" type="button">Wyczyść wszystkie zapisane odpowiedzi</button>
+          <p class="small-note">Pobranie pliku nie przesyła niczego automatycznie. Nie wpisuj danych osobowych swoich ani kolegów.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="shell editorial-sources">
+    <details open class="editorial-sources-details">
+      <summary>Skąd pochodzą informacje? <span aria-hidden="true">＋</span></summary>
+      <div id="guideSources" class="md-body"></div>
+    </details>
+  </section>
+
+  <footer class="site-footer"><div class="shell footer-inner"><div><span class="footer-logo">L<span>·</span>27</span><p>Najpierw ciekawość.<br>Potem decyzja.</p></div><div class="footer-meta">Opracowano na podstawie udokumentowanych ofert z 2026/27. <br>To nie jest oficjalny serwis szkół. Oferta 2027/28 niepotwierdzona.<br><a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a></div></div></footer>
+
+  <dialog id="schoolDialog" class="school-dialog" aria-labelledby="dialogTitle">
+    <div class="dialog-shell">
+      <header class="dialog-head"><span class="dialog-brand">L·27 / PROFIL</span><button type="button" class="close-button" id="closeDialog" aria-label="Zamknij kartę szkoły">✕</button></header>
+      <div class="dialog-content" id="dialogContent"></div>
+    </div>
+  </dialog>
+  <dialog id="compareDialog" class="compare-dialog" aria-labelledby="compareTitle">
+    <header class="dialog-head"><span class="dialog-brand">L·27 / PORÓWNAJ</span><button type="button" class="close-button" id="closeCompare" aria-label="Zamknij porównanie">✕</button></header>
+    <div class="compare-inner"><h2 id="compareTitle">Różne kierunki. Nie ranking.</h2><p>To zestawienie różnic w ofercie, nie ocena szkół ani jakości życia.</p><div id="compareBody"></div></div>
+  </dialog>
+  <aside class="compare-tray" id="compareTray" hidden aria-live="polite"><div class="tray-content"><span id="trayText">0 z 3 do porównania</span><div class="tray-actions"><button id="clearCompare" type="button">Wyczyść</button><button id="openCompare" type="button" class="tray-go">Porównaj <span>↗</span></button></div></div></aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script type="text/plain" id="embeddedGuide"># Jakie liceum chciałbyś naprawdę poznać?
+## 8 propozycji + 4 inne możliwości • wersja rozszerzona 0.2
+
+**Dla osoby wybierającej liceum na rok 2027/28 | 19 października 2026**
+
+> Nie musisz teraz wybierać szkoły. Chcemy zobaczyć, które miejsca i rodzaje klas Cię ciekawią, czego nie chcesz i czego powinniśmy jeszcze się dowiedzieć.
+
+### Najpierw cztery ważne rzeczy
+
+1. **Szkoła to nie to samo co klasa.** W jednej szkole mogą być dwie bardzo różne ścieżki. To, z kim będziesz na co dzień, jest dziś w dużej mierze niewiadomą.
+2. **To są profile z oferty 2026/27**, czyli poprzedniego rocznika. Oferta na Twój nabór **2027/28 może być inna**.
+3. **Drużyna siatkarska, hala i szkolna liga nie są tym samym co możliwość regularnego grania.** W wielu miejscach znamy wyniki lub wydarzenia, ale jeszcze nie mamy potwierdzonego cotygodniowego grania dostępnego dla każdego chętnego. Jeśli nadal zechcesz trenować klubowo, nie planujemy zmiany Twojego dotychczasowego klubu. Grafik klubu zostawiamy na później.
+4. **Nie znamy jeszcze jakości przyjaźni, przeciążenia ani rzeczywistego czasu dojazdu.** Możemy czytać opinie, lecz to nie zastępuje rozmowy z uczniem wybranego profilu.
+
+> **Jak czytać opisy:** programy odnoszą się głównie do oferty 2026/27; wydarzenia mogły dotyczyć starszych uczniów, a dostępność zajęć i sportu w Twojej przyszłej klasie wymaga sprawdzenia. W każdej karcie znajdziesz też źródła.
+
+**Prosty sposób czytania:** pierwszego dnia przeczytaj 4 karty, drugiego pozostałe 4. Przy każdej zaznacz `ciekawi / może / na razie nie / za mało wiem`. Potem obejrzyj cztery dodatkowe możliwości. **Kolejność alfabetyczna — nie ranking.**
+
+---
+
+## 1. Batory — dwujęzyczna matematyczno-geograficzna
+**Inna możliwość w tej szkole:** pre-IB, czyli przygotowanie do matury międzynarodowej.
+
+**Główna idea:** matematyka i geografia z intensywnym angielskim, w szkole z wieloma rodzajami inicjatyw. Alternatywa pre-IB pozwala później ubiegać się o miejsce na IB, ale nie zapewnia go automatycznie.
+
+**Czego byś się uczył?** W wersji mat–geo (oferta 2026/27) są rozszerzona matematyka i geografia oraz nauka dwujęzyczna. W ramowym planie **wcześniejszego naboru 2025/26** liczba obowiązkowych lekcji rośnie z 33 tygodniowo w klasie I do 38 w II. To pokazuje, że warto zapytać o zwykły tydzień nauki; nie jest to plan Twojego rocznika ani liczba godzin pracy domowej.
+
+**Co uczniowie mogą robić?** Szkoła jest znana z inicjatyw, takich jak szkolny festiwal filmowy i WawMUN. Patronami dwujęzycznej mat–geo w ofercie 2026/27 są **SGH i Wydział Zarządzania UW**. We wrześniu 2026 odbyło się też spotkanie z przedstawicielami **Banku Światowego**, według szkoły z udziałem ponad 200 uczniów. Nie znamy liczby spotkań partnerów odbytych przez dokładnie tę klasę.
+
+**Siatkówka i budynek.** Istnieje chłopięca reprezentacja i historia osiągnięć; nie potwierdziliśmy, czy można co tydzień grać, nie będąc w kadrze. W budynku szkoła wskazuje stołówkę, bufet, czytelnię i mediatekę. Stan szatni sportowych i dostęp do hali trzeba zobaczyć.
+
+**Co może być trudniejsze?** W pre-IB przejście po dwóch latach do właściwego programu IB zależy od kwalifikacji, a niektóre przedmioty, np. Economics, mogą mieć dodatkowe warunki. W 2026/27 w pre-IB przewidywano kontynuację niemieckiego lub francuskiego — to istotne, jeśli wolałbyś zaczynać inny język od zera.
+
+**Zapytaj uczniów:** „Co w Twojej klasie robicie razem poza lekcjami?”, „Czy ktoś spoza reprezentacji regularnie gra w siatkówkę?”, „Jak bardzo różni się codzienność dwujęzycznej mat–geo i pre-IB?”
+
+**Zastanów się:** Wolisz mocną matematykę i angielski z polską maturą czy możliwość przejścia na IB, mimo dodatkowych warunków?
+
+Źródła: [profil 2026/27](https://batory.edu.pl/strefa-kandydata/profile-klas/), [plany historyczne](https://batory.edu.pl/strefa-ucznia/siatka-godzin/), [Bank Światowy 2026](https://batory.edu.pl/wizyta-przedstawicieli-banku-swiatowego-w-batorym/).
+
+---
+
+## 2. Czacki — 1B: matematyka i biznes
+**Inna możliwość:** 1M — matematyka, fizyka, informatyka.
+
+**Główna idea:** połączenie matematyki, biznesu i możliwości działania z ludźmi, bez konieczności wybierania ścieżki stricte informatycznej.
+
+**Czego byś się uczył?** Klasa 1B z oferty 2026/27 ma rozszerzoną **matematykę oraz biznes i zarządzanie**. W czteroletniej siatce zapisano też elementy statystyki i realioznawstwo. Obowiązkowy angielski ma w tym planie **3 godziny tygodniowo** — nie jest formalnym rozszerzeniem. Szkoła ogłosiła natomiast fakultatywne **Business & Legal English** i `Grammar Club`; uruchomienie zależy od chętnych. Ma też koła informatyczne na trzech poziomach.
+
+**Co uczniowie mogą robić?** Jest duży szkolny festiwal teatralny. **Klasa 3B** miała w listopadzie 2025 podczas lekcji biznesu zajęcia online z SGH o kredytach i zadłużeniu — to dowód faktycznych kontaktów z uczelnią, ale dotyczący starszego rocznika. Zespół robotyczny **TADroid** naprawdę uczestniczył w międzynarodowych zawodach w marcu 2026. Nie wiemy, jak łatwo dołączyć do niego pierwszakowi z 1B.
+
+**Siatkówka i budynek.** Szkoła prowadzi ligę międzyklasową, w której pojawiają się pierwszoklasiści. Rozpiska 2026/27 wymienia poniedziałek i środę, ale nie dowodzi regularnego, otwartego treningu dla każdego. Szkoła pokazuje Multimedialne Centrum Informacji; starsze materiały wspominają też salę gimnastyczną i bufet. **Wygoda przerw i tłok na korytarzach nie są ustalone.**
+
+**Co może być trudniejsze?** Nie wiemy, ilu uczniów 1B naprawdę rozwija angielski ponad obowiązkową siatkę ani czy intensywność matematyki i biznesu pozostawia czas na siatkówkę. Internetowe opinie o klasach są sprzeczne i nie traktujemy ich jak faktów.
+
+**Zapytaj uczniów:** „Ilu pierwszaków gra w lidze i ile razy tygodniowo?”, „Czy 1B robi własne projekty biznesowe, czy głównie lekcje?”, „Jak dużo angielskiego można dodatkowo ćwiczyć?”
+
+**Zastanów się:** Czy chciałbyś pracować z zespołem nad pomysłem biznesowym, teatralnym czy technologicznym? Który brzmi najciekawiej?
+
+Źródła: [oferta klas](https://www.czacki.edu.pl/dla-kandydatow/informacje), [zajęcia 2026/27](https://www.czacki.edu.pl/uczniowie/zajecia-pozalekcyjne), [kronika projektów](https://www.czacki.edu.pl/o-szkole/historia-szkoly).
+
+---
+
+## 3. Kochanowski — 1C: matematyka, geografia i drugi język
+**Inna możliwość:** 1B z matematyką, informatyką i fizyką.
+
+**Główna idea:** matematyka i tematy społeczno-gospodarcze połączone z językiem niemieckim lub hiszpańskim, w szkole z przykładami dużych, wspólnie robionych wydarzeń.
+
+**Czego byś się uczył?** Oferta 1C 2026/27 przewiduje **matematykę, geografię i niemiecki lub hiszpański**; angielski pozostaje nauczany, ale nie jest formalnym rozszerzeniem tej klasy. Profile matematyczno-geograficzno-językowe są od lat objęte współpracą z **SGH**, choć dokładnego programu zajęć nowej 1C nie mamy.
+
+**Co uczniowie mogą robić?** To jedna z ciekawszych szkół do pytania o sprawczość uczniów. Podczas festiwalu nauki **FeNIKS w maju 2024** według szkolnej relacji **204 licealistów** współtworzyło wydarzenie dla **366 uczniów podstawówek**, m.in. doświadczenia chemiczne, fizyczne i własną komorę mgłową. To projekt wykonany przez realnych uczniów, choć jeszcze nie wiemy, czy pierwszy rocznik 1C może swobodnie dołączać. Szkoła organizuje też wydarzenia międzyklasowe, m.in. festiwal MAK.
+
+**Siatkówka i budynek.** Są szkolne rozgrywki z udziałem różnych klas i udokumentowane wyniki chłopców. Nie wiadomo, czy działają dostępne dla wszystkich cotygodniowe treningi. Od **14 września 2026** szkoła informuje o działającej stołówce; ma też salę gimnastyczną i boiska. Faktyczny standard szatni do sprawdzenia.
+
+**Co może być trudniejsze?** Drugi język jest ważną częścią profilu, więc warto sprawdzić, czy taki kierunek nauki rzeczywiście Cię interesuje. Nie znamy obciążenia domowego i relacji w konkretnej 1C.
+
+**Zapytaj uczniów:** „Jak dostaliście się do zespołu organizującego FeNIKS/MAK?”, „Czy można grać w siatkówkę także bez reprezentacji?”, „Jak wygląda nauka drugiego języka i angielskiego w 1C?”
+
+**Zastanów się:** Wolisz profil bliższy ekonomii i językom, czy bardziej techniczną 1B? Co chciałbyś zbudować lub zorganizować z klasą?
+
+Źródła: [oferta 2026/27](https://kochanowski.waw.pl/text18/), [FeNIKS 2024](https://www.kochanowski.waw.pl/news/?gtnid=814), [patronat SGH](https://www.kochanowski.waw.pl/text/?eqa=dGV4dD10ZXh0L3RleHQ1NyZzdWJwYWdlPTEmc2tnZHllYXI9MjAyNg%3D%3D).
+
+---
+
+## 4. Lelewel — 1B: dwujęzyczna klasa ekonomiczna
+**Inna możliwość:** 1A — bardziej fizyczno-matematyczna.
+
+**Główna idea:** ekonomia, matematyka i geografia w programie dwujęzycznym z mocnym angielskim, z możliwymi kontaktami z uczelniami biznesowymi.
+
+**Czego byś się uczył?** Według historycznej oferty 1B łączy **matematykę, geografię, biznes i zarządzanie** oraz naukę w systemie dwujęzycznym. Szkoła opisuje współpracę **SGH** z klasami dwujęzycznymi matematyczno-geograficznymi i patronat **Akademii Leona Koźmińskiego** nad klasą ekonomiczną. Nie potwierdziliśmy, że **oba** programy są jednocześnie realizowane przez daną 1B z 2026/27, ani ile rzeczywistych warsztatów odbywa się w semestrze.
+
+**Co uczniowie mogą robić?** Szkoła opisuje debaty oraz projekty społeczne. To ciekawa opcja, jeśli chcesz rozmawiać o gospodarce, finansach i sprawach społecznych z ludźmi z klasy, a nie tylko zaliczać przedmioty.
+
+**Siatkówka i budynek.** Szkolna drużyna chłopców uczestniczyła w **amatorskich rozgrywkach siatkarskich w 2026 r.** Nie znamy zasad naboru, poziomów gry ani tego, czy można trenować regularnie. Szkoła podaje stołówkę i salę sportową, lecz znaleziony cennik posiłków dotyczy **2025/26**, nie Twojego rocznika.
+
+**Co może być trudniejsze?** Dojazd na Bielany może okazać się ważnym kompromisem, ale nie mamy jeszcze poprawnego pomiaru rano. Trzeba też ustalić, ile naprawdę jest angielskiego i kontaktu z partnerami uczelnianymi w zwykłym miesiącu.
+
+**Zapytaj uczniów:** „Czy 1B ma faktyczne warsztaty z SGH i Koźmińskim?”, „Czy ktoś poza kadrą regularnie gra w szkolną siatkówkę?”, „Jak wygląda zwykła codzienność dwujęzyczności?”
+
+**Zastanów się:** Czy ciekawi Cię uczenie się ekonomii z intensywnym angielskim na tyle, żeby zaakceptować ewentualnie dłuższy dojazd?
+
+Źródła: [rekrutacja](https://lelewel.waw.pl/dla-kandydatow/rekrutacja/), [współprace](https://lelewel.waw.pl/o-szkole/wspolpraca-z-uczelniami/).
+
+---
+
+## 5. Nowak-Jeziorański — 1C: matematyka, geografia, WOS
+**Inna możliwość:** 1E — matematyka, fizyka, informatyka.
+
+**Główna idea:** matematyka i rozumienie świata społeczno-gospodarczego, w szkole, która pokazuje konkretne aktywności wokół giełdy i inwestowania.
+
+**Czego byś się uczył?** Rozszerzona **matematyka, geografia i wiedza o społeczeństwie (WOS)**. Angielski jest nauczany, ale nie występuje jako formalne rozszerzenie 1C w ofercie 2026/27.
+
+**Co uczniowie mogą robić?** W **marcu 2026** klasa **2B** odbyła wizytę na **Giełdzie Papierów Wartościowych**. W **kwietniu 2026** uczniowie klas **2B i 2C** uczestniczyli w konferencji o funduszach ETF i inwestowaniu pasywnym. To prawdziwe wydarzenia dotyczące finansów, nie tylko logo instytucji. **Nie potwierdziliśmy** jednak analogicznego planu dla przyszłej 1C ani możliwości prowadzenia własnych projektów inwestycyjnych.
+
+**Siatkówka i budynek.** Odbywały się rozgrywki międzyklasowe, ale regularny otwarty trening pozostaje niewiadomą. W galerii z **kwietnia 2026** szkoła pokazuje m.in. odnowione, klimatyzowane sale, indywidualne szafki, dwie sale gimnastyczne, siłownię, czytelnię i stołówkę. To relacja szkoły o wyposażeniu, nie gwarancja komfortu przez cały rok.
+
+**Co może być trudniejsze?** Trzeba dowiedzieć się, czy nauka jest przede wszystkim intensywna i indywidualna, czy także często odbywa się we wspólnych projektach. Internetowe opinie są niejednoznaczne, więc nie chcemy zgadywać.
+
+**Zapytaj uczniów:** „Czy uczniowie 1C sami realizują projekty o finansach, czy uczestniczą tylko w wyjazdach?”, „Jak wygląda szkolna siatkówka?”, „Ile wspólnych inicjatyw robi przeciętna klasa?”
+
+**Zastanów się:** Czy interesuje Cię bardziej poznawanie rynku i mechanizmów gospodarki, czy własne projektowanie i budowanie czegoś z zespołem?
+
+Źródła: [oferta](https://jezioranski.edu.pl/oferta-edukacyjna-na-rok-szkolny-20262027%2C77%2Cpl), [GPW 2026](https://jezioranski.edu.pl/klasa-2b-na-gieldzie-papierow-wartosciowych%2C189%2Cpl), [konferencja 2026](https://jezioranski.edu.pl/uczniowie-lxvii-lo-na-warsaw-passive-investment-conference-2026%2C196%2Cpl).
+
+---
+
+## 6. Prus — A: dwujęzyczna matematyczno-geograficzna
+**Inna możliwość:** pre-IB (później ewentualnie IB DP).
+
+**Główna idea:** dwujęzyczna matematyka i geografia przy polskiej maturze albo osobna droga międzynarodowa, w szkole z tradycjami działań naukowych i siatkarskich.
+
+**Czego byś się uczył?** Klasa A z oferty 2026/27 ma rozszerzoną **matematykę i geografię** oraz — według grafiki szkolnej — **6 godzin angielskiego tygodniowo**. Osobna klasa pre-IB przygotowuje przez dwa lata do IB DP; wybór kursów i przejście są warunkowe. W naborze 2026/27 wymagana minimalna liczba punktów ze sprawdzianu angielskiego wynosiła **38/95 dla A** i **57/95 dla pre-IB**, by przejść do kolejnego etapu rekrutacji (to nie gwarancja przyjęcia). Te warunki mogą się zmienić.
+
+**Co uczniowie mogą robić?** We wrześniu 2026 uczniowie uczestniczyli w **Festiwalu Nauki** na zajęciach organizowanych m.in. przez uczelnie. Wcześniej szkolne koło geograficzne opracowało grę terenową po Saskiej Kępie. Szkoła przedstawia też program dobrowolnego tutoringu, czyli indywidualnych spotkań ucznia z nauczycielem; nie znamy rzeczywistej liczby korzystających z niego uczniów 1A.
+
+**Siatkówka i budynek.** Szkolny **UKS** deklaruje całoroczne szkolenie siatkarskie. Nie wiemy jednak, czy pierwszy rocznik i osoby nienależące do reprezentacji mogą regularnie dołączyć. To **nie jest propozycja zmiany Twojego klubu**; sprawdzamy tylko szkolną możliwość gry. Szkoła ma osobną halę sportową i strefę ciszy przy bibliotece. W sieci znajdują się sprzeczne uwagi o miejscach do jedzenia — to temat do obejrzenia na miejscu, nie ustalony fakt.
+
+**Co może być trudniejsze?** Droga na Saską Kępę wymaga rzetelnego sprawdzenia rano. W pre-IB trzeba później zdecydować, jakie przedmioty studiować na poziomie HL (wyższym) i SL (standardowym), oraz spełnić kryteria przejścia.
+
+**Zapytaj uczniów:** „Czy realnie można grać w UKS na swoim poziomie?”, „Jak różnią się A i pre-IB w pracy domowej i koleżeńskich relacjach?”, „Czy można wygodnie zjeść posiłek w szkole?”
+
+**Zastanów się:** Co jest dla Ciebie ciekawsze: dużo angielskiego i polska matura czy IB, w którym za dwa lata będziesz wybierać własny zestaw przedmiotów?
+
+Źródła: [oferta/rekrutacja](https://prus.edu.pl/rekrutacja/), [tutoring](https://prus.edu.pl/uczniowie/tutoring/), [Festiwal Nauki 2026](https://prus.edu.pl/uczniowie-naszej-szkoly-na-festiwalu-nauki/).
+
+---
+
+## 7. Reytan — 1-3: matematyka, biznes, hiszpański
+**Inna możliwość:** 1-4 — matematyka, geografia, niemiecki.
+
+**Główna idea:** matematyka i biznes, mocniej rozwijany hiszpański oraz szkolne wydarzenia tworzone przez uczniów.
+
+**Czego byś się uczył?** Z ramowej siatki dla **naboru 2026/27** wynika program z matematyką, **biznesem i zarządzaniem** oraz **hiszpańskim od podstaw, rozwijanym dalej na poziomie rozszerzonym**. Angielski jest kontynuowany, lecz nie jako formalne rozszerzenie. Tekst szkolnego PDF pokazuje w klasach I–IV odpowiednio **31, 35, 32 i 26** lekcji w opublikowanym zestawieniu. Układ tej tabeli nie został jeszcze obejrzany wizualnie, a liczby nie pokazują prac domowych.
+
+**Co uczniowie mogą robić?** Jest festiwal muzyczny **TARA** i szkolne inicjatywy. Reytan ma rzeczywiste przykłady warsztatów SGH, wizyt na GPW i spotkań z pracownikami firm, np. AstraZeneca, ale **większość dokumentowanych zajęć dotyczy starszych klas**. Patronat SGH dla nowej 1-3 był w ofercie 2026/27 zapowiadany; zakres wykonania jeszcze sprawdzamy. Szkoła deklaruje także konsultacje nauczycielskie.
+
+**Siatkówka i budynek.** Szkoła opisuje wyremontowane sale gimnastyczne i boisko typu Orlik. Aktualnie **nie mamy dowodu dostępnych cotygodniowych treningów siatkówki dla wszystkich chętnych chłopców**. Wciąż trzeba sprawdzić szatnie, ciepłe posiłki i komfort przerw.
+
+**Co może być trudniejsze?** Jeśli bardzo zależy Ci na mocno rozwijanym angielskim w obowiązkowym programie, to ta klasa stawia akcent gdzie indziej: biznes i hiszpański. Nie znamy tempa pracy, integracji i obciążenia domowego bieżącej 1-3.
+
+**Zapytaj uczniów:** „Czy uczniowie 1-3 mieli już własne warsztaty z SGH?”, „Ile jest realnego hiszpańskiego i angielskiego?”, „Czy można regularnie grać w siatkówkę?”
+
+**Zastanów się:** Czy bardziej interesowałoby Cię poznawanie biznesu i nowego języka niż codziennie intensywny angielski dwujęzyczny?
+
+Źródła: [oferta 2026/27](https://reytan.edu.pl/oferta-20262027-klasy-pierwsze%2C507%2Cpl), [ramowa siatka](https://reytan.edu.pl/files/507/oferta-oraz-harmonogram-rekrutacji-26-27.pdf), [wydarzenia SGH](https://reytan.edu.pl/klasa-akademicka-sgh%2C61%2Cpl).
+
+---
+
+## 8. Zamoyski — 1G: matematyka, geografia, angielski
+**Inna możliwość:** 1B — matematyka, fizyka, angielski.
+
+**Główna idea:** trzy przedmioty rozszerzone i własne inicjatywy uczniów, w tym duży festiwal przekazywany kolejnym pokoleniom szkolnym.
+
+**Czego byś się uczył?** Oferta 1G dla **2026/27** przewiduje rozszerzoną **matematykę, geografię i angielski**. Dla osoby, która nie chce wybierać od razu wyłącznie przedmiotów ścisłych, może to być ciekawy zestaw do ekonomii, geografii społecznej i różnych kierunków studiów. Klasy mat–geo szkoła wiąże ze współpracą z SGH.
+
+**Co uczniowie mogą robić?** **FAZA** to uczniowski festiwal, przy którego organizacji uczniowie przygotowują program i uczą kolejne roczniki pracy nad wydarzeniem. Szkoła wymienia również kontakty z WAT i placówkami badawczymi; wizyta w WAT opisana była dla **innej klasy, 1B**, dlatego nie traktujemy jej jako gwarancji zajęć laboratoryjnych 1G.
+
+**Siatkówka i budynek.** Brak potwierdzonego cotygodniowego otwartego treningu siatkówki chłopców. Oficjalny wirtualny spacer pokazuje dużą i małą salę gimnastyczną, siłownię, bibliotekę, czytelnię oraz szkolny bufet **Okienko**. Trzeba sprawdzić aktualność zdjęć i możliwość zjedzenia obiadu.
+
+**Co może być trudniejsze?** Nie wiadomo, czy zwykły pierwszak łatwo dołącza do FAZY, jak silna jest presja na wyniki w 1G i ile zostaje czasu poza szkołą. Pojedyncze opinie internetowe są zbyt słabe, by opisać „typową atmosferę”.
+
+**Zapytaj uczniów:** „Co pierwszoklasista realnie robi przy FAZIE?”, „Czy to przedsięwzięcie jest otwarte na nowe osoby?”, „Czy istnieje swobodna szkolna siatkówka poza reprezentacją?”
+
+**Zastanów się:** Czy chciałbyś organizować duże wydarzenie, nawet jeżeli oznacza to dodatkowy czas i odpowiedzialność poza lekcjami?
+
+Źródła: [szkolne współprace](https://zamoyski.edu.pl/szkola/wspolpraca-z-uczelniami/), [FAZA](https://zamoyski.edu.pl/po-godzinach/faza/), [wirtualny spacer](https://zamoyski.edu.pl/rekrutacja/wirtualny-spacer/).
+
+---
+
+## Są też cztery inne szkoły w tym samym badaniu
+
+**One nie odpadły.** Na razie otrzymują krótsze karty wyłącznie dlatego, że pierwsza ósemka ma pokazać różne rodzaje wyborów, a nie zamknąć listę.
+
+### Domeyko — 1C/1D, matematyka–geografia–angielski
+Szkoła opisuje sporą halę sportową (około **1400 m²**, trzy sektory), boiska, uczniowską telewizję **IgnaśTV** oraz opcjonalne certyfikowane laboratorium komputerowe **ICDL**. W październiku 2026 publikowano aktualną ofertę obiadów. W 2026/27 1C i 1D miały podobne rozszerzenia, ale **różne warianty drugiego języka**. Do ustalenia: udział pierwszaków w projektach, szkolna siatkówka i poranny dojazd. Źródła: [szkoła](https://domeyko.edu.pl/uczniowie/), [rekrutacja](https://domeyko.edu.pl/rekrutacja/).
+
+### Hoffmanowa — 1U uniwersytecka mat–fiz–ang lub profil mat–geo–WOS
+W historycznej ofercie klasy **1U** szkoła deklaruje **dwie dodatkowe godziny matematyki tygodniowo** we współpracy z Wydziałem Matematyki, Informatyki i Mechaniki UW. Jest też duża społeczność szkolna, koła i zaplecze sportowe. Nie wiemy, czy 1U rzeczywiście ma większą presję niż inne profile ani czy można co tydzień grać w szkolną siatkówkę. Źródło: [profil 1U 2026](https://hoffmanowa.pl/mat-fiz-ang-2026/).
+
+### Kopernik — dwujęzyczna matematyczno-społeczna 1G lub MYP→IB
+Klasa **1G 2026/27** to matematyka, geografia i drugi język kontynuowany (niemiecki lub hiszpański), plus intensywny angielski dwujęzyczny. Opublikowany tekst planu podaje najwięcej lekcji w **klasie II**, ale nie mówi nic o pracy domowej. Osobna ścieżka **MYP** może prowadzić do IB DP pod warunkami. Szkoła pokazuje uczniowskie Kopernikalia i współpracę z SGH dla 1G. Potrzeba informacji o realnej siatkówce, różnych środowiskach obu profili i dojeździe. Źródło: [ramowy plan 1G](https://kopernik.edu.pl/wp-content/uploads/2026/02/1G_RPN-4-LETNIE-LO-26-30.pdf).
+
+### Żmichowska — 1B mat–geo lub 1C angielski–WOS–biznes
+Te dwie klasy są dość różne. W 2026/27 **1B** miała formalne rozszerzenia z matematyki i geografii, ale **nie z angielskiego**. **1C** stawiała na angielski, WOS i biznes, ale nie na rozszerzoną matematykę. Szkoła pokazuje aktywność międzyklasową i społeczność artystyczną, natomiast dostęp do regularnej gry w siatkówkę i codzienna organizacja życia szkoły wymagają sprawdzenia. Źródło: [szkoła i rekrutacja](https://www.zmichowska.pl/).
+
+---
+
+## Krótki przewodnik: trzy ścieżki matury
+
+| Droga | Co oznacza w praktyce | Ważny kompromis |
+|---|---|---|
+| **Polska matura** | Wybierasz klasę z określonymi rozszerzeniami, np. mat–geo–ang albo mat–biznes. | Sprawdź, czy program zostawia Ci miejsce na nowe zainteresowania. |
+| **Polska matura w klasie dwujęzycznej** | Uczysz się intensywnie języka, a część zajęć może odbywać się również po angielsku. | Dłuższa/intensywniejsza nauka języka nie zawsze oznacza formalne rozszerzenie. |
+| **Pre-IB/MYP, a później ewentualnie IB DP** | Pierwsze dwa lata przygotowania, potem możliwy wybór kursów na poziomie wyższym (HL) i standardowym (SL). | **Nie zawsze przechodzisz automatycznie**; trzeba sprawdzić oceny, języki i dostępność grup. |
+
+Każda droga może prowadzić na dobre studia w Polsce i za granicą. Żadna sama z siebie nie zapewnia lepszych kolegów ani więcej siatkówki.
+
+## Czego jeszcze nikt uczciwie nie wie?
+
+- W której klasie rzeczywiście spotkasz ludzi, z którymi będziesz chciał spędzać czas.
+- Czy będziesz mógł **regularnie grać w szkolną siatkówkę**, a nie tylko oglądać reprezentację lub wystąpić raz w roku.
+- Ile czasu zabiorą w rzeczywistości lekcje, dojazd i prace domowe.
+- Czy zwykły pierwszak może od razu uczestniczyć w ciekawych projektach i sam coś zaproponować.
+- Jak wygodnie funkcjonuje budynek w normalny poniedziałek: szatnie, natryski, kolejki do posiłków, miejsca spotkań i odpoczynku.
+- Jakie dokładnie klasy powstaną w rekrutacji **2027/28**.
+
+To są rzeczy, które będziemy sprawdzać wspólnie ze szkołami i uczniami. **Brak informacji to nie to samo co wada szkoły.**
+
+---
+
+## Twoja krótka odpowiedź (bez punktacji i rankingu)
+
+Przeczytane szkoły możesz swobodnie podzielić na `chcę poznać`, `może`, `na razie nie`, `za mało wiem`. Nie musisz wypełniać żadnej tabeli ani porównywać wszystkich po kolei.
+
+**1. Trzy propozycje, które najbardziej Cię ciekawią — i dlaczego:**
+
+1. __________________________   Bo: ______________________________________
+2. __________________________   Bo: ______________________________________
+3. __________________________   Bo: ______________________________________
+
+**2. Co brzmi najmniej atrakcyjnie albo budzi Twoje obawy?**
+
+________________________________________________________________________
+
+**3. Jakie trzy pytania chciałbyś zadać uczniom tych szkół?**
+
+1. _____________________________________________________________________
+2. _____________________________________________________________________
+3. _____________________________________________________________________
+
+**4. Czy wśród czterech dodatkowych szkół widzisz taką, którą chcesz poznać równie dokładnie?**
+
+________________________________________________________________________
+
+**5. Co ważnego pominęliśmy — nawet jeżeli nie znajduje się na tej liście?**
+
+________________________________________________________________________
+
+**Na tym koniec pierwszej rundy.** Nie wybierasz dziś zwycięzcy. Twoja ciekawość pomoże zdecydować, **o co naprawdę warto pytać uczniów**, zanim podejmiesz decyzję za kilka miesięcy.
+
+---
+
+### Skąd te informacje?
+Podstawą są oficjalne dokumenty rekrutacyjne szkół z **2026/27**, datowane relacje szkolne z wykonanych wydarzeń **2024–2026** i zestawienia źródeł przygotowane do projektu rodzinnego. Dodatkowe raporty o opiniach internetowych służyły głównie do ułożenia pytań, **nie do oceny, w której szkole ludzie są „lepsi” lub atmosfera pewniejsza**. Opisy wydarzeń klas starszych nie są obietnicą dla Twojej przyszłej klasy. Szczegółowe źródła są podane przy każdej szkole, a pełna dokumentacja znajduje się w prywatnym repozytorium projektu.
+</script>
+</body>
+</html>
